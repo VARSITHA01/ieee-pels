@@ -1,0 +1,21 @@
+
+
+.Headermid{
+    background-color: pink;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    flex: auto;
+}
+
+.Headermid_left{
+    background-color: orange;
+    width: 100%;
+}
+
+.Headermid_right{
+    background-color: lightblue;
+    width: 100%;
+}

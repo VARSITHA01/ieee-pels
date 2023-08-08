@@ -1,0 +1,39 @@
+
+
+.Headerbottom{
+    background-color: antiquewhite;
+    width: 100%;
+    height: fit-content;
+}
+
+.headerbottom_navbarx{
+    padding: 0;
+    height: fit-content;
+}
+
+.headerbottom_navx{
+    padding: 0;
+}
+
+.headerbottom_navbar{
+    background-color: red;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.headerbottom_navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.headerbottom_navbar ul li{
+    line-height: 60px;
+    padding: 17px 15px 0px 15px;
+}
+
