@@ -11,11 +11,27 @@
 }
 
 .Headermid_left{
-    background-color: orange;
+    background-color: white;
     width: 100%;
 }
 
 .Headermid_right{
-    background-color: lightblue;
+    background-color: white;
     width: 100%;
+}
+
+.chapter_logo{
+    background-image: url("./chapter_logo.png");
+    height: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+}
+
+.ieee_logo{
+    background-image: url("./ieee_logo.png");
+    height: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10%;
 }
