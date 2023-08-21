@@ -1,5 +1,5 @@
 import React from 'react'
-import Headermid from './Headermid'
+// import Headermid from './Headermid'
 import Headerbottom from './Headerbottom'
 import './Header.css'
 
