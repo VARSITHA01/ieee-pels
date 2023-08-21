@@ -1,7 +1,22 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 a {
   text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(0, 70, 105); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(205, 238, 255); 
 }

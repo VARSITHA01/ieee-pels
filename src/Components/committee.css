@@ -1,0 +1,17 @@
+
+.committee{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 10% 10px 10%;
+}
+
+.committeetitle{
+    color: rgb(0, 70, 105);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.committeemembers{
+    display: grid;
+}

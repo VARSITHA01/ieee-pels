@@ -1,5 +1,4 @@
 import React from 'react'
-import Headertop from './Headertop'
 import Headermid from './Headermid'
 import Headerbottom from './Headerbottom'
 import './Header.css'
@@ -7,8 +6,7 @@ import './Header.css'
 function Header() {
   return (
     <div className='Header'>
-        <Headertop />
-        <Headermid />
+        {/* <Headermid /> */}
         <Headerbottom />
     </div>
   )

@@ -1,7 +1,7 @@
 
 
 .Headermid{
-    background-color: pink;
+    background-color: white;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -15,6 +15,11 @@
     width: 100%;
 }
 
+.Headermid_center{
+    background-color: white;
+    width: 100%;
+}
+
 .Headermid_right{
     background-color: white;
     width: 100%;
@@ -22,6 +27,14 @@
 
 .chapter_logo{
     background-image: url("./chapter_logo.png");
+    height: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+}
+
+.vit_logo{
+    background-image: url("./vit_logox.png");
     height: 170px;
     background-size: contain;
     background-repeat: no-repeat;

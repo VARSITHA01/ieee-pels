@@ -1,7 +1,92 @@
 
 
 .Home{
-    background-color: rgb(208, 145, 250);
+    background-color: white;
     width: 100%;
-    height: 700px;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.homesec1{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    flex: 0.6;
+}
+
+.homesec2{
+    background-color: white;
+    height: fit-content;
+    flex: 0.4;
+    justify-content: center;
+    margin-top: 40px;
+    border-left: solid 1px rgb(0, 70, 105);
+}
+
+.homewelcome{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.homechaptername{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+}
+
+.homeclgname{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.homeintrotitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 70, 105);
+}
+
+.homebranchvisiontitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 70, 105);
+}
+
+.homebranchmissiontitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 70, 105);
+}
+
+.homechapterlogosec2{
+    background-image: url("./chapter_logo.png");
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.homeupcomingevents{
+    padding: 30px;
+    padding-top: 0px;
+    margin-top: -20px;
+}
+
+.homeupcomingeventstitle{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+}
+
+.homeimplinks{
+    padding: 30px;
+    padding-top: 0px;
+    margin-top: -20px;
+}
+
+.homeimplinkstitle{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
 }

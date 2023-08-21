@@ -1,0 +1,22 @@
+
+.about{
+    background-color: white;
+    height: fit-content;
+    width: 100%;
+    padding: 40px 10% 10px 10%;
+}
+
+.abouttitle{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    padding-bottom: 13px;
+}
+
+.aboutsectitle{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 70, 105);
+    padding-top: 10px;
+    margin-bottom: 7px;
+}
