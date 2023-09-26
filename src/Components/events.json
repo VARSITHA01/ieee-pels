@@ -7,11 +7,6 @@
     {
         "id": 2,
         "event_link": "https://www.ieee.org/pelsvit",
-        "event_title": "Introduction to Machine Learning"
-    },
-    {
-        "id": 3,
-        "event_link": "https://www.ieee.org/pelsvit",
-        "event_title": "Introduction to Machine Learning"
+        "event_title": "Power Electronics and EV - An Equation"
     }
 ]
