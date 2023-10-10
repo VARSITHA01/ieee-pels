@@ -1,0 +1,26 @@
+
+.card{
+    background-color: transparent;
+    border: none;
+    margin-top: 43px;
+    height: 400px;
+    width: 300px;
+}
+
+.card-img-top{
+    height: 330px;
+    width: 270px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.name-1{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.position-1{
+    font-size: 18px;
+}

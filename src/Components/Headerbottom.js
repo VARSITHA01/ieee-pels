@@ -23,9 +23,9 @@ function Headerbottom() {
               <Link to={"/"}><li>HOME</li></Link>
               <Link to={"/about"}><li>ABOUT</li></Link>
               <Link to={"/committee"}><li>COMMITTEE</li></Link>
-              <Link to={"/scopemembers"}><li>SCOPE MEMBERS</li></Link>
+              {/* <Link to={"/scopemembers"}><li>SCOPE MEMBERS</li></Link> */}
               <Link to={"/events"}><li>EVENTS</li></Link>
-              <Link to={"/achivements"}><li>ACHIVEMENTS</li></Link>
+              {/* <Link to={"/achivements"}><li>ACHIVEMENTS</li></Link> */}
               <Link to={"/contact"}><li>CONTACT</li></Link>
             </ul>
           </div>

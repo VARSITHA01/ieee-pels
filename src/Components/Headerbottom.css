@@ -35,9 +35,9 @@
 }
 
 .headerbottom_navbar ul li{
+    width: 100%;
     line-height: 60px;
     padding: 17px 15px 0px 15px;
     color: white;
-
 }
 
