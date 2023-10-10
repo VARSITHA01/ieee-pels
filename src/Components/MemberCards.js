@@ -3,17 +3,15 @@ import "./memberCards.css";
 
 export class MemberCards extends Component {
   render() {
-    let { image, name, position } = this.props;
-
-    console.log(image)
+    let { member_img_link, member_name, member_position } = this.props;
 
     return (
       <>
         <div class="card">
-          <img class="card-img-top" src={image} alt="Card image cap" />
+          <img class="card-img-top" src={member_img_link} alt="Member" />
           <div class="card-body">
-            <h5 class="card-title name-1">{name}</h5>
-            <h5 class="card-title position-1">{position}</h5>
+            <h5 class="card-title name-1">{member_name}</h5>
+            <h5 class="card-title position-1">{member_position}</h5>
           </div>
         </div>
       </>

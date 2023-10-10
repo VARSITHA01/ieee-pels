@@ -12,7 +12,7 @@ function Committee() {
         <div className="row ">
             {
             members
-            && members.map(members => <div className="col-sm-4 colx" ><MemberCards image={members.member_img_link} name={members.member_name} position={members.member_position} /></div>)
+            && members.map(members => <div className="col-sm-4 colx" ><MemberCards member_img_link={members.member_img_link} member_name={members.member_name} member_position={members.member_position} /></div>)
             }
         </div>
       </div>
