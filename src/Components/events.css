@@ -11,3 +11,13 @@
     font-weight: 700;
     color: rgb(0, 70, 105);
 }
+
+.event_colx img{
+    height: 300px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.events_list{
+    margin-bottom: 20px;
+}
