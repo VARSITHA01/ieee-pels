@@ -13,7 +13,7 @@
 }
 
 .event_colx img{
-    height: 300px;
+    max-height: 300px;
     width: 400px;
     margin-bottom: 15px;
 }
@@ -25,6 +25,7 @@
 @media screen and (max-width: 800px) {
     .event_colx img{
         width: 300px;
+        max-height: 250px;
         margin-bottom: 15px;
     }
   }
