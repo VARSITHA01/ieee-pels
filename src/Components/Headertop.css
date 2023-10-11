@@ -1,9 +1,10 @@
 
 
 .Headertop{
-    background-color: rgb(0,70,105);
+    background-color: rgb(205, 238, 255);
+    /* background-color: rgb(0,70,105); */
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -11,13 +12,13 @@
     text-align: center;
     padding-left: 30px;
     /* border-top: 1px solid rgb(0,70,105); */
-    border-top: 1px solid rgb(205, 238, 255);
+    border-top: 1px solid rgb(0,70,105);
 }
 
 .Headertop li{
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px 13px;
-    line-height: 25px;
+    line-height: 20px;
     font-weight: 700;
-    color: rgb(205, 238, 255);
+    color: rgb(0,70,105);
 }

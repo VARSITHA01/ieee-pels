@@ -1,9 +1,12 @@
 import React from "react";
+import Headertop from './Headertop'
 import "./Headerbottom.css";
 import { Link } from "react-router-dom";
 
 function Headerbottom() {
   return (
+    <>
+      <Headertop />
     <div className="Headerbottom">
       <nav class="navbar headerbottom_navbarx  navbar-expand-lg bg-body-tertiary">
         <div class="headerbottom_navx container-fluid">
@@ -32,6 +35,7 @@ function Headerbottom() {
         </div>
       </nav>
     </div>
+    </>
   );
 }
 
