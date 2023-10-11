@@ -22,3 +22,9 @@
     font-weight: 700;
     color: rgb(0,70,105);
 }
+
+@media screen and (max-width: 800px) {
+    .hidden_top_header{
+        display: none;
+    }
+  }

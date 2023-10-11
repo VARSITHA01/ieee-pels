@@ -21,3 +21,10 @@
 .events_list{
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    .event_colx img{
+        width: 300px;
+        margin-bottom: 15px;
+    }
+  }
