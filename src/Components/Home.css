@@ -90,3 +90,15 @@
     font-weight: 700;
     color: rgb(0, 70, 105);
 }
+
+@media screen and (max-width: 800px) {
+  .Home{
+      flex-direction: column-reverse;
+  }
+  .homesec2{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    flex: 0.6;
+    }
+}

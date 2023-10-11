@@ -34,7 +34,7 @@ function Home() {
       </div>
       <div className="homesec2">
         <div className="homechapterlogosec2"></div>
-        <div className="homeupcomingevents">
+        {/* <div className="homeupcomingevents">
           <p className="homeupcomingeventstitle">Upcoming Events</p>
           <ul>
             <li>Event-1</li>
@@ -49,7 +49,7 @@ function Home() {
             <li>Link-2</li>
             <li>Link-3</li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   )
