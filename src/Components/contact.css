@@ -11,3 +11,26 @@
     font-weight: 700;
     color: rgb(0, 70, 105);
 }
+
+.contact_details{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact_name{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.contact_position{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.contact_email{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+}
