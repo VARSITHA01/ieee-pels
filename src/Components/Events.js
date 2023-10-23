@@ -33,6 +33,10 @@ function Events() {
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
+              <div className="event_info">
+                Date : September 22, 2023 <br/>
+                Speaker : Mr. Souvick Chattejee from MathWorks <br/><br/>
+              </div>
               <div className="row event_rowx">
                 <div className="col-sm-5 event_colx">
                   <img src="ML_EVENT/ml1.jpg" alt="ML_EVENT" />
