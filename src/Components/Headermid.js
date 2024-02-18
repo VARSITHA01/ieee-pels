@@ -3,7 +3,7 @@ import './Headermid.css'
 
 function Headermid() {
   return (
-    <div className='Headermid'>
+    <div className='Headermid animate__animated animate__fadeIn'>
       {/* <div className="Headermid_left">
         <div className="vit_logo"></div>
       </div> */}

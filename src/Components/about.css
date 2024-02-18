@@ -1,13 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .about{
     background-color: white;
     height: fit-content;
     width: 100%;
     padding: 40px 10% 10px 10%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .abouttitle{
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 700;
     color: rgb(0, 70, 105);
     padding-bottom: 13px;

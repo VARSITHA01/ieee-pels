@@ -2,14 +2,14 @@
     {
         "id": 1,
         "member_position": "Chairperson",
-        "member_name": "Ki. Kevin Fabis Jebaraj",
-        "member_img_link" : "im8.jpg"
+        "member_name": "Aneesh Chatterjee",
+        "member_img_link" : "im11.jpg"
     },
     {
         "id": 2,
         "member_position": "Vice Chairperson",
-        "member_name": "Aneesh Chatterjee",
-        "member_img_link" : "im11.jpg"
+        "member_name": "Milind Nosaliya",
+        "member_img_link" : "im2.jpg"
     },
     {
         "id": 3,
@@ -31,56 +31,26 @@
     },
     {
         "id": 6,
-        "member_position": "Web Master",
-        "member_name": "Milind Nosaliya",
-        "member_img_link" : "im2.jpg"
-    },
-    {
-        "id": 7,
-        "member_position": "Web Master",
-        "member_name": "Piyush dubey",
-        "member_img_link" : "im12.jpg"
-    },
-    {
-        "id": 8,
-        "member_position": "Treasurer",
-        "member_name": "Eshan Kumar S",
-        "member_img_link" : "im4.jpg"
-    },
-    {
-        "id": 9,
         "member_position": "Marketing Head",
         "member_name": "Aryan Paruthi",
         "member_img_link" : "im13.jpg"
     },
     {
-        "id": 10,
+        "id": 7,
         "member_position": "Management Head",
         "member_name": "Sparsh Singh",
         "member_img_link" : "im9.jpg"
     },
     {
-        "id": 11,
-        "member_position": "Human Resouces(HR) Manager",
-        "member_name": "Anirudh Garg",
-        "member_img_link" : "im5.jpg"
-    },
-    {
-        "id": 12,
+        "id": 8,
         "member_position": "Design Head",
         "member_name": "Arihant Tiwari",
         "member_img_link" : "im3.jpg"
     },
     {
-        "id": 13,
-        "member_position": "Editorial Head",
+        "id": 9,
+        "member_position": "Research and Development Head",
         "member_name": "Dushyant Mahto",
         "member_img_link" : "im1.jpg"
-    },
-    {
-        "id": 14,
-        "member_position": "Research and Development Head",
-        "member_name": "Aryan Chaturvedi",
-        "member_img_link" : "im6.jpg"
     }
 ]

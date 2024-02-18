@@ -4,8 +4,8 @@ import "./events.css";
 
 function Events() {
   return (
-    <div className="events">
-      <p className="eventstitle">IEEE PELS VIT EVENTS</p>
+    <div className="events animate__animated animate__fadeIn">
+      <p className="eventstitle animate__animated animate__slideInLeft">IEEE PELS VIT EVENTS</p>
       {/* <ul>
         {
           eventsjson

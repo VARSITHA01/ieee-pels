@@ -3,8 +3,8 @@ import './about.css'
 
 function About() {
   return (
-    <div className='about'>
-      <div className="abouttitle">About Our Chapter</div>
+    <div className='about animate__animated animate__fadeIn'>
+      <div className="abouttitle animate__animated animate__slideInLeft">About Our Chapter</div>
       <div className="aboutsec aboutsec1">
         <p className="aboutsectitle aboutsec1title">Our Institution</p>
         <div className="aboutsec1flex">

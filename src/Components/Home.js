@@ -1,14 +1,23 @@
 import React from 'react'
 import './Home.css'
+import 'animate.css';
+import Typewriter from 'typewriter-effect';
 
 function Home() {
   return (
-    <div className='Home'>
+    <div className='Home animate__animated animate__fadeIn'>
       <div className="homesec1">
         <div className="homechapname">
           <p className="homewelcome">Welcome to,</p>
           <p className="homechaptername">IEEE POWER ELECTRONICS SOCIETY</p>
-          <p className="homeclgname">VELLORE INSTITUTE OF TECHNOLOGY, VELLORE</p>
+          <p className="homeclgname">
+          
+          <Typewriter
+          onInit={(typewriter)=>{
+              typewriter.pauseFor(1000).typeString("VELLORE INSTITUTE OF TECHNOLOGY,VELLORE").start();
+          }}
+          />
+          </p>
         </div>
         <div className="homeintro">
           <p className="homeintrotitle">Introduction</p>

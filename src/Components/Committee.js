@@ -5,8 +5,8 @@ import MemberCards from './MemberCards'
 
 function Committee() {
   return (
-    <div className='committee'>
-      <center><div className="committeetitle">Committee Members</div></center>
+    <div className='committee animate__animated animate__fadeIn'>
+      <center><div className="committeetitle animate__animated animate__slideInLeft">Committee Members</div></center>
       <div className="committeemembers">
       <div className="container membersx">
         <div className="row ">
