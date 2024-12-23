@@ -1,12 +1,31 @@
 [
     {
-        "id": 1,
-        "event_link": "https://www.ieee.org/pelsvit",
-        "event_title": "Introduction to Machine Learning"
+      "id": 1,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Introduction to Machine Learning",
+      "year": 2023,
+      "date": "September 22, 2023",
+      "speaker": "Mr. Souvick Chattejee from MathWorks",
+      "images": [
+        "ML_EVENT/ml1.jpg",
+        "ML_EVENT/ml2.jpg",
+        "ML_EVENT/ml3.jpg",
+        "ML_EVENT/ml4.jpg"
+      ]
     },
     {
-        "id": 2,
-        "event_link": "https://www.ieee.org/pelsvit",
-        "event_title": "Power Electronics and EV - An Equation"
+      "id": 2,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Power Electronics and EV - An Equation",
+      "year": 2023,
+      "date": "October 23, 2023",
+      "speaker": "Dr. Albert Alexander",
+      "images": [
+        "POWER_EVENT/pe1.jpg",
+        "POWER_EVENT/pe2.jpg",
+        "POWER_EVENT/pe3.jpg",
+        "POWER_EVENT/pe4.jpg"
+      ]
     }
-]
+  ]
+  

@@ -1,96 +1,109 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./events.css";
-// import eventsjson from "./events.json";
+import eventsjson from "./events.json"; // Ensure the events.json file is imported
 
 function Events() {
+  // Default year set to 2023
+  const defaultYear = 2023;
+
+  // Filter events for the default year (2023)
+  const filteredEvents = eventsjson.filter((event) => event.year === defaultYear);
+
+  // Set the default event when the year is selected
+  const [selectedEvent, setSelectedEvent] = useState(filteredEvents[0]);
+  const [selectedYear, setSelectedYear] = useState(defaultYear);
+
+  // Handle year selection
+  const handleYearChange = (e) => {
+    const selectedYear = e.target.value;
+    setSelectedYear(selectedYear);
+
+    // Filter events based on the selected year
+    const filtered = eventsjson.filter((event) => event.year === parseInt(selectedYear));
+    setSelectedEvent(filtered[0]); // Set the first event for the selected year
+  };
+
+  // Handle event selection
+  const handleEventChange = (e) => {
+    const selected = eventsjson.find((event) => event.id === parseInt(e.target.value));
+    setSelectedEvent(selected);
+  };
+
+  // Get unique years from the events
+  const years = [...new Set(eventsjson.map((event) => event.year))];
+
   return (
     <div className="events animate__animated animate__fadeIn">
       <p className="eventstitle animate__animated animate__slideInLeft">IEEE PELS VIT EVENTS</p>
-      {/* <ul>
-        {
-          eventsjson
-          && eventsjson.map(eventsjson => <a href={eventsjson.event_link} rel='noreferrer' target="_blank"><li>{eventsjson.event_title}</li></a>)
-        }
-      </ul> */}
 
-      <div class="accordion accordion-flush events_list" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed event_title"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
-            >
-              Introduction to Machine Learning
-            </button>
-          </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <div className="event_info">
-                Date : September 22, 2023 <br/>
-                Speaker : Mr. Souvick Chattejee from MathWorks <br/><br/>
-              </div>
-              <div className="row event_rowx">
-                <div className="col-sm-5 event_colx">
-                  <img src="ML_EVENT/ml1.jpg" alt="ML_EVENT" />
-                </div>
-                <div className="col-sm-5 event_colx">
-                  <img src="ML_EVENT/ml2.jpg" alt="ML_EVENT" />
-                </div>
-                <div className="col-sm-5 event_colx">
-                  <img src="ML_EVENT/ml3.jpg" alt="ML_EVENT" />
-                </div>
-                <div className="col-sm-5 event_colx">
-                  <img src="ML_EVENT/ml4.jpg" alt="ML_EVENT" />
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Menu with dropdowns for year and event */}
+      <div className="menu-container">
+        {/* Dropdown menu for year selection */}
+        <div className="dropdown-item">
+          <label htmlFor="year">Choose Year</label>
+          <select id="year" onChange={handleYearChange} value={selectedYear}>
+            <option value="">Choose Year</option>
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
-              Power Electronics and EV - An Equation
-            </button>
-          </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              <div className="row event_rowx">
-                <div className="col-sm-5 event_colx">
-                  <img src="POWER_EVENT/pe1.jpg" alt="POWER_EVENT" />
-                </div>
-                <div className="col-sm-5 event_colx">
-                  <img src="POWER_EVENT/pe2.jpg" alt="POWER_EVENT" />
-                </div>
-                <div className="col-sm-5 event_colx">
-                  <img src="POWER_EVENT/pe3.jpg" alt="POWER_EVENT" />
-                </div>
-                <div className="col-sm-5 event_colx">
-                  <img src="POWER_EVENT/pe4.jpg" alt="POWER_EVENT" />
-                </div>
-              </div>
-            </div>
+
+        {/* Dropdown menu for event selection */}
+        {selectedYear && (
+          <div className="dropdown-item">
+            <label htmlFor="event">Choose Event</label>
+            <select id="event" onChange={handleEventChange} value={selectedEvent?.id || ""}>
+              <option value="">Choose Event</option>
+              {filteredEvents.map((event) => (
+                <option key={event.id} value={event.id}>
+                  {event.event_title}
+                </option>
+              ))}
+            </select>
           </div>
-        </div>
+        )}
       </div>
+
+      {selectedEvent && (
+        <div className="accordion accordion-flush events_list" id="accordionFlushExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed event_title"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                {selectedEvent.event_title}
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              className="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div className="accordion-body">
+                <div className="event_info">
+                  <strong>Date:</strong> {selectedEvent.date} <br />
+                  <strong>Speaker:</strong> {selectedEvent.speaker} <br /><br />
+                </div>
+                <div className="row event_rowx">
+                  {selectedEvent.images.map((image, index) => (
+                    <div className="col-sm-5 event_colx" key={index}>
+                      <img src={image} alt={`${selectedEvent.event_title} image ${index + 1}`} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,35 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-.events{
-    background-color: white;
+/* Basic Styles for Menu and Dropdown */
+.menu-container {
     width: 100%;
-    height: fit-content;
-    padding: 40px 10% 10px 10%;
-    font-family: 'Poppins', sans-serif;
-    height: 60vh;
-}
-
-.eventstitle{
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(0, 70, 105);
-}
-
-.event_colx img{
-    max-height: 300px;
-    width: 400px;
-    margin-bottom: 15px;
-}
-
-.events_list{
-    margin-bottom: 20px;
-}
-
-@media screen and (max-width: 800px) {
-    .event_colx img{
-        width: 300px;
-        max-height: 250px;
-        margin-bottom: 15px;
-    }
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
   }
+  
+  .dropdown-item {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-item select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .eventstitle {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .event-info {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .event_colx {
+    margin-bottom: 15px;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Accordion Styles */
+  .accordion-button {
+    background-color:skyblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+ 
+  
