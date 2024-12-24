@@ -9,35 +9,17 @@
 }
 
 .abouttitle {
-    font-size: 40px;
+    font-size: clamp(28px, 5vw, 40px); /* Dynamically adjusts between 28px and 40px */
     font-weight: 700;
     color: rgb(0, 70, 105);
     text-align: center; /* Center aligns the title */
-    border-bottom: 2px solid rgb(0, 70, 105); /* Adds a dividing line */
+   
     padding-bottom: 15px;
     margin-bottom: 25px; /* Adds spacing after the title */
-    opacity: 0; /* Initially invisible */
-}
-
-/* Add the animation class */
-.popAnimation {
-    animation: popAnimation 1s ease forwards; /* Apply the animation */
-}
-
-/* Keyframes for the pop animation */
-@keyframes popAnimation {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
 }
 
 .aboutsectitle {
-    font-size: 24px; /* Slightly larger font for section titles */
+    font-size: clamp(18px, 3vw, 24px); /* Dynamically adjusts between 18px and 24px */
     font-weight: 600; /* Increased weight for better emphasis */
     color: rgb(0, 70, 105);
     margin-bottom: 15px;
@@ -53,6 +35,12 @@
     padding: 20px;
     margin-bottom: 20px; /* Space between sections */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out;
+}
+
+.aboutsec:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+    transform: translateY(-2px); /* Creates a subtle lift effect */
 }
 
 .aboutsec p {
@@ -73,6 +61,11 @@
     list-style-type: disc;
 }
 
+/* Smooth scroll for internal links */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .about {
@@ -80,11 +73,11 @@
     }
 
     .abouttitle {
-        font-size: 32px;
+        font-size: clamp(24px, 5vw, 32px);
     }
 
     .aboutsectitle {
-        font-size: 20px;
+        font-size: clamp(16px, 3vw, 20px);
     }
 
     .aboutsec p {

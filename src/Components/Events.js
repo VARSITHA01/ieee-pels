@@ -1,37 +1,34 @@
 import React, { useState } from "react";
 import "./events.css";
+import "animate.css"; // Import the animate.css library
 import eventsjson from "./events.json"; // Ensure the events.json file is imported
 
 function Events() {
-  // Default year set to 2023
   const defaultYear = 2023;
-
-  // Get unique years from the events
   const years = [...new Set(eventsjson.map((event) => event.year))];
 
-  // State for selected year and filtered events
   const [selectedYear, setSelectedYear] = useState(defaultYear);
   const [filteredEvents, setFilteredEvents] = useState(
     eventsjson.filter((event) => event.year === defaultYear)
   );
 
-  // Handle year selection
   const handleYearChange = (e) => {
     const selectedYear = parseInt(e.target.value);
     setSelectedYear(selectedYear);
 
-    // Filter events based on the selected year
     const filtered = eventsjson.filter((event) => event.year === selectedYear);
     setFilteredEvents(filtered);
   };
 
   return (
     <div className="events animate__animated animate__fadeIn">
-      <p className="eventstitle animate__animated animate__slideInLeft">IEEE PELS VIT EVENTS</p>
+      {/* Styled title */}
+      <p className="eventstitle animate__animated animate__fadeInUp">
+        IEEE PELS VIT EVENTS
+      </p>
 
       {/* Menu with dropdowns for year */}
       <div className="menu-container">
-        {/* Dropdown menu for year selection */}
         <div className="dropdown-item">
           <label htmlFor="year">Choose Year</label>
           <select id="year" onChange={handleYearChange} value={selectedYear || ""}>

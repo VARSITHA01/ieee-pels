@@ -1,4 +1,14 @@
-/* Basic Styles for Menu and Dropdown */
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;700&display=swap');
+.eventstitle {
+  font-size: 40px; /* Similar font size to 'abouttitle' */
+  font-weight: 700; /* Bold font weight */
+  color: rgb(0, 70, 105); /* Blue color like 'abouttitle' */
+  text-align: center; /* Center align the title */
+  margin-bottom: 25px; /* Space below the title */
+  padding-bottom: 15px; /* Optional padding for consistency */
+  text-decoration: none; /* Ensure no underline */
+}
+
 .menu-container {
   width: 100%;
   max-width: 300px;

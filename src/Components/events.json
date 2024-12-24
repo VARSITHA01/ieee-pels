@@ -1,5 +1,5 @@
 [
-  {
+    {
       "id": 1,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Introduction to Machine Learning",
@@ -7,13 +7,13 @@
       "date": "September 22, 2023",
       "speaker": "Mr. Souvick Chattejee from MathWorks",
       "images": [
-          "ML_EVENT/ml1.jpg",
-          "ML_EVENT/ml2.jpg",
-          "ML_EVENT/ml3.jpg",
-          "ML_EVENT/ml4.jpg"
+        "ML_EVENT/ml1.jpg",
+        "ML_EVENT/ml2.jpg",
+        "ML_EVENT/ml3.jpg",
+        "ML_EVENT/ml4.jpg"
       ]
-  },
-  {
+    },
+    {
       "id": 2,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Power Electronics and EV - An Equation",
@@ -21,13 +21,13 @@
       "date": "October 23, 2023",
       "speaker": "Dr. Albert Alexander",
       "images": [
-          "POWER_EVENT/pe1.jpg",
-          "POWER_EVENT/pe2.jpg",
-          "POWER_EVENT/pe3.jpg",
-          "POWER_EVENT/pe4.jpg"
+        "POWER_EVENT/pe1.jpg",
+        "POWER_EVENT/pe2.jpg",
+        "POWER_EVENT/pe3.jpg",
+        "POWER_EVENT/pe4.jpg"
       ]
-  },
-  {
+    },
+    {
       "id": 3,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Role of PMU in Smart Grids",
@@ -35,52 +35,83 @@
       "date": "November 22, 2023",
       "speaker": "Dr. Ritula Thakur",
       "images": [
-          "PMU_EVENT/image.png",
-          "PMU_EVENT/image copy.png",
-          "PMU_EVENT/image copy 2.png",
-          "PMU_EVENT/image copy.png"
-        ]
-  },
-  {
+        "PMU_EVENT/image.png",
+        "PMU_EVENT/image copy.png",
+        "PMU_EVENT/image copy 2.png",
+        "PMU_EVENT/image copy.png"
+      ]
+    },
+    {
       "id": 4,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "CASA: Pathways to Recover: A Journey Beyond Addiction",
       "year": 2024,
       "date": "January 27, 2024",
       "speaker": "Vaibhav Goyal, Harsh Raj",
-      "images": ["CASA_EVENT/image.png",
-          "CASA_EVENT/image copy.png",
-          "CASA_EVENT/image copy 2.png",
-          "CASA_EVENT/image copy 3.png"]
-  },
-  {
+      "images": [
+        "CASA_EVENT/image.png",
+        "CASA_EVENT/image copy.png",
+        "CASA_EVENT/image copy 2.png",
+        "CASA_EVENT/image copy 3.png"
+      ]
+    },
+    {
       "id": 5,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Understanding the Risks: A Discussion on Weapon Possession and Its Consequences",
       "year": 2024,
       "date": "February 28, 2024",
-      "speaker": "Vasu Jain, Indraniel Roy Chaudhary ",
-      "images": ["WEAPON_EVENT/image.png",
-          "WEAPON_EVENT/image copy.png",
-          "WEAPON_EVENT/image copy 2.png",
-          "WEAPON_EVENT/image copy 3.png"]
-  },
-  
-  {
+      "speaker": "Vasu Jain, Indraniel Roy Chaudhary",
+      "images": [
+        "WEAPON_EVENT/image.png",
+        "WEAPON_EVENT/image copy.png",
+        "WEAPON_EVENT/image copy 2.png",
+        "WEAPON_EVENT/image copy 3.png"
+      ]
+    },
+    {
       "id": 7,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Exploring the Frontiers of VLSI Design: A Hands-On Workshop",
       "year": 2024,
       "date": "March 7, 2024",
       "speaker": "Dr. S. Balamurugan",
-      "images": ["VLSI_EVENT/image.png",
-      "VLSI_EVENT/image copy.png",
-      "VLSI_EVENT/image copy 2.png",
-      "VLSI_EVENT/image copy 3.png"]
-  },
-  
-  {
-      "id": 9,
+      "images": [
+        "VLSI_EVENT/image.png",
+        "VLSI_EVENT/image copy.png",
+        "VLSI_EVENT/image copy 2.png",
+        "VLSI_EVENT/image copy 3.png"
+      ]
+    },
+    {
+      "id": 8,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "From Mine to Mile: Building a Sustainable Electric Vehicle Supply Chain for India",
+      "year": 2024,
+      "date": "April 25, 2024",
+      "speaker": "Dr. Mohan Krishna S",
+      "images": [
+        "IIMBEVENT/image.png",
+        "IIMBEVENT/image copy.png",
+        "IIMBEVENT/image copy 2.png",
+        "IIMBEVENT/image copy 3.png"
+      ]
+    },
+    {
+        "id": 9,
+        "event_link": "https://www.ieee.org/pelsvit",
+        "event_title": "Emerging Technologies and Innovations in Electric Aircrafts",
+        "year": 2024,
+        "date": "August 22, 2024",
+        "speaker": "Dr. Rani C",
+      "images": [
+        "RANICEVENT/image.png",
+        "RANICEVENT/image copy.png",
+        "RANICEVENT/image copy 2.png",
+        "RANICEVENT/image copy 3.png"]
+    },
+    {
+      "id": 10,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Hackovation",
       "year": 2024,
@@ -92,62 +123,79 @@
         "GRAVITASEVENTS_24/image copy 2.png",
         "GRAVITASEVENTS_24/WhatsApp Image 2024-09-29 at 18.41.48 (2).jpeg"
       ]
-  },
-  {
-      "id": 10,
+    },
+    {
+      "id": 11,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "AI Nexus",
       "year": 2024,
       "date": "September 20, 2024",
       "speaker": "Dr. Albert Alexander Stoiner",
-      "images": []
-  },
-  {
-      "id": 11,
+      "images": [
+        "GRAVITASEVENTS_24/image copy 3.png",
+        "GRAVITASEVENTS_24/image copy 4.png",
+        "GRAVITASEVENTS_24/image copy 5.png",
+        "GRAVITASEVENTS_24/image copy 6.png"
+      ]
+    },
+    {
+      "id": 12,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "CircuitWave",
       "year": 2024,
       "date": "September 20, 2024",
       "speaker": "Dr. Rani C.",
-      "images": []
-  },
-  {
-      "id": 12,
+      "images": [
+        "GRAVITASEVENTS_24/image copy 7.png",
+        "GRAVITASEVENTS_24/image copy 8.png",
+        "GRAVITASEVENTS_24/image copy 9.png",
+        "GRAVITASEVENTS_24/image copy 7.png"
+      ]
+    },
+    {
+      "id": 13,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Machine Learning Using MATLAB 2.0",
       "year": 2024,
       "date": "September 27, 2024",
-      "speaker": "Dr. Sauvik chatterjee",
-      "images": []
-  },
-  {
-      "id": 13,
+      "speaker": "Dr. Sauvik Chatterjee",
+      "images": [
+        "GRAVITASEVENTS_24/image copy 10.png",
+        "GRAVITASEVENTS_24/image copy 12.png",
+        "GRAVITASEVENTS_24/image copy 13.png",
+        "GRAVITASEVENTS_24/image copy 11.png"
+      ]
+    },
+    {
+      "id": 14,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "IEEE Region 10 Sponsored 36-hour Hackathon on Affordable Medical Device Development",
       "year": 2024,
       "date": "October 3-4, 2024",
       "speaker": "N/A",
-      "images": ["MEDICALHACK/image.png",
-      "MEDICALHACK/image copy.png",
-      "MEDICALHACK/image copy 4.png",
-      "MEDICALHACK/image copy 3.png"]
-  },
-  {
-      "id": 14,
+      "images": [
+        "MEDICALHACK/image.png",
+        "MEDICALHACK/image copy.png",
+        "MEDICALHACK/image copy 4.png",
+        "MEDICALHACK/image copy 3.png"
+      ]
+    },
+    {
+      "id": 15,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Rocketronics: The Role of Electronics in Rocketry (Day 1)",
       "year": 2024,
       "date": "October 7, 2024",
       "speaker": "Dr. Belwin Edward J , Mr. Aayush Dixit , Mr. Shaurya Satyajeet",
       "images": [
-       "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.54.34_8f8e5494.jpg",
-       "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.55.22_8bab5d04.jpg",
-       "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.55.22_8bab5d04.jpg",
-       "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.54.34_f9b50807.jpg"
+        "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.54.34_8f8e5494.jpg",
+        "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.55.22_8bab5d04.jpg",
+        "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.55.22_8bab5d04.jpg",
+        "ROCKETRONICS/WhatsApp Image 2024-10-07 at 12.54.34_f9b50807.jpg"
       ]
-  },
-  {
-      "id": 15,
+    },
+    {
+      "id": 16,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Beyond Launch: The Role of Energy and Control in Space Missions (Day 2)",
       "year": 2024,
@@ -159,5 +207,6 @@
         "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.34_0829b57d.jpg",
         "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.36_a958bdad.jpg"
       ]
-  }
-]
+    }
+  ]
+  

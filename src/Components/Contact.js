@@ -1,10 +1,12 @@
 import React from 'react';
 import './contact.css';
+import 'animate.css'; // Import the animate.css library
 
 function Contact() {
   return (
     <div className='contact animate__animated animate__fadeIn'>
-      <p className="contacttitle animate__animated animate__slideInLeft">Contact Details</p>
+      {/* Added a rise-up animation for the title */}
+      <p className="contacttitle animate__animated animate__fadeInUp">Contact Details</p>
 
       {/* Contact details for Dr. Albert Alexander S. */}
       <div className="contact_card">
