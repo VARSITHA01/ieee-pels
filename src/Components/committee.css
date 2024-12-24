@@ -1,24 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-.committee{
+/* General Styling for Committee Section */
+/* General Styling for Committee Section */
+.committee {
     background-color: white;
     width: 100%;
     height: fit-content;
     padding: 40px 10% 10px 10%;
     font-family: 'Poppins', sans-serif;
-}
-
-.committeetitle{
+  }
+  
+  .committeetitle {
     color: rgb(0, 70, 105);
     font-size: 40px;
     font-weight: 700;
-}
-
-.committeemembers{
+  }
+  
+  /* Grid Styling for Committee Members */
+  .committeemembers {
     display: grid;
-}
-
-.membersx{
+  }
+  
+  .membersx {
     margin-bottom: 40px;
-}
+  }
+  
+  /* Centering the dropdown button */
+  .dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers the dropdown horizontally */
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .dropdown button {
+    background-color: rgb(0, 70, 105);
+    color: white;
+    padding: 10px 20px;
+    width: auto; /* Set to auto to adjust to button's content */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .dropdown button:hover {
+    background-color: rgb(0, 55, 85);
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-button {
+    background-color: rgb(0, 55, 85);
+  }
+  

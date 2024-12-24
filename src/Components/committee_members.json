@@ -3,60 +3,70 @@
         "id": 1,
         "member_position": "Chairperson",
         "member_name": "Aneesh Chatterjee",
-        "member_img_link" : "IMG-20240307-WA0018.jpg"
+        "member_img_link": "IMG-20240307-WA0018.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 2,
         "member_position": "Vice Chairperson",
         "member_name": "Milind Nosaliya",
-        "member_img_link" : "IMG-20240307-WA0014.jpg"
+        "member_img_link": "IMG-20240307-WA0014.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 3,
         "member_position": "Secretary",
         "member_name": "Srishti Darkunde",
-        "member_img_link" : "IMG-20240307-WA0010.jpg"
+        "member_img_link": "IMG-20240307-WA0010.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 4,
-        "member_position": "Vice Seceratary",
+        "member_position": "Vice Secretary",
         "member_name": "Advik Vijay",
-        "member_img_link" : "IMG-20240307-WA0019.jpg"
+        "member_img_link": "IMG-20240307-WA0019.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 5,
         "member_position": "Technical Head",
         "member_name": "Nimit Jain",
-        "member_img_link" : "IMG-20240307-WA0017.jpg"
+        "member_img_link": "IMG-20240307-WA0017.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 6,
         "member_position": "Events Head",
         "member_name": "Prachi Kumari",
-        "member_img_link" : "IMG-20240307-WA0009.jpg"
+        "member_img_link": "IMG-20240307-WA0009.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 7,
         "member_position": "Management Head",
         "member_name": "Shashank Iyer",
-        "member_img_link" : "IMG-20240307-WA0016.jpg"
+        "member_img_link": "IMG-20240307-WA0016.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 8,
         "member_position": "Design Head",
         "member_name": "Alok Das",
-        "member_img_link" : "IMG-20240307-WA0012.jpg"
+        "member_img_link": "IMG-20240307-WA0012.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 9,
         "member_position": "Research and Development Head",
         "member_name": "Dushyant Mahto",
-        "member_img_link" : "IMG-20240307-WA0008.jpg"
+        "member_img_link": "IMG-20240307-WA0008.jpg",
+        "tenure": "2023-2024"
     },
     {
         "id": 10,
         "member_position": "Finance Head",
         "member_name": "Rishabh Chauhan",
-        "member_img_link" : "IMG-20240307-WA0013.jpg"
+        "member_img_link": "IMG-20240307-WA0013.jpg",
+        "tenure": "2023-2024"
     }
 ]
