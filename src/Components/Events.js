@@ -9,12 +9,11 @@ function Events() {
   // Get unique years from the events
   const years = [...new Set(eventsjson.map((event) => event.year))];
 
-  // State for selected year, selected event, and filtered events
+  // State for selected year and filtered events
   const [selectedYear, setSelectedYear] = useState(defaultYear);
   const [filteredEvents, setFilteredEvents] = useState(
     eventsjson.filter((event) => event.year === defaultYear)
   );
-  const [selectedEvent, setSelectedEvent] = useState(filteredEvents[0] || null);
 
   // Handle year selection
   const handleYearChange = (e) => {
@@ -24,20 +23,13 @@ function Events() {
     // Filter events based on the selected year
     const filtered = eventsjson.filter((event) => event.year === selectedYear);
     setFilteredEvents(filtered);
-    setSelectedEvent(filtered[0] || null); // Set the first event for the selected year or null
-  };
-
-  // Handle event selection
-  const handleEventChange = (e) => {
-    const selected = filteredEvents.find((event) => event.id === parseInt(e.target.value));
-    setSelectedEvent(selected || null);
   };
 
   return (
     <div className="events animate__animated animate__fadeIn">
       <p className="eventstitle animate__animated animate__slideInLeft">IEEE PELS VIT EVENTS</p>
 
-      {/* Menu with dropdowns for year and event */}
+      {/* Menu with dropdowns for year */}
       <div className="menu-container">
         {/* Dropdown menu for year selection */}
         <div className="dropdown-item">
@@ -51,62 +43,36 @@ function Events() {
             ))}
           </select>
         </div>
-
-        {/* Dropdown menu for event selection */}
-        {filteredEvents.length > 0 && (
-          <div className="dropdown-item">
-            <label htmlFor="event">Choose Event</label>
-            <select id="event" onChange={handleEventChange} value={selectedEvent?.id || ""}>
-              <option value="">Choose Event</option>
-              {filteredEvents.map((event) => (
-                <option key={event.id} value={event.id}>
-                  {event.event_title}
-                </option>
-              ))}
-            </select>
-          </div>
-        )}
       </div>
 
-      {/* Display selected event details */}
-      {selectedEvent && (
-        <div className="accordion accordion-flush events_list" id="accordionFlushExample">
-          <div className="accordion-item">
-            <h2 className="accordion-header">
-              <button
-                className="accordion-button collapsed event_title"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                {selectedEvent.event_title}
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              className="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div className="accordion-body">
-                <div className="event_info">
-                  <strong>Date:</strong> {selectedEvent.date} <br />
-                  <strong>Speaker:</strong> {selectedEvent.speaker} <br />
-                  <br />
-                </div>
-                <div className="row event_rowx">
-                  {selectedEvent.images.map((image, index) => (
-                    <div className="col-sm-5 event_colx" key={index}>
-                      <img src={image} alt={`${selectedEvent.event_title} image ${index + 1}`} />
-                    </div>
-                  ))}
-                </div>
+      {/* Display events in cards */}
+      <div className="events-cards">
+        {filteredEvents.length > 0 ? (
+          filteredEvents.map((event) => (
+            <div className="event-card" key={event.id}>
+              <h3 className="event-title">{event.event_title}</h3>
+              <p>
+                <strong>Date:</strong> {event.date}
+              </p>
+              <p>
+                <strong>Speaker:</strong> {event.speaker}
+              </p>
+              <div className="event-images">
+                {event.images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`${event.event_title} image ${index + 1}`}
+                    className="event-image"
+                  />
+                ))}
               </div>
             </div>
-          </div>
-        </div>
-      )}
+          ))
+        ) : (
+          <p>No events available for the selected year.</p>
+        )}
+      </div>
     </div>
   );
 }

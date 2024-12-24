@@ -1,5 +1,5 @@
 [
-    {
+  {
       "id": 1,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Introduction to Machine Learning",
@@ -7,13 +7,13 @@
       "date": "September 22, 2023",
       "speaker": "Mr. Souvick Chattejee from MathWorks",
       "images": [
-        "ML_EVENT/ml1.jpg",
-        "ML_EVENT/ml2.jpg",
-        "ML_EVENT/ml3.jpg",
-        "ML_EVENT/ml4.jpg"
+          "ML_EVENT/ml1.jpg",
+          "ML_EVENT/ml2.jpg",
+          "ML_EVENT/ml3.jpg",
+          "ML_EVENT/ml4.jpg"
       ]
-    },
-    {
+  },
+  {
       "id": 2,
       "event_link": "https://www.ieee.org/pelsvit",
       "event_title": "Power Electronics and EV - An Equation",
@@ -21,11 +21,133 @@
       "date": "October 23, 2023",
       "speaker": "Dr. Albert Alexander",
       "images": [
-        "POWER_EVENT/pe1.jpg",
-        "POWER_EVENT/pe2.jpg",
-        "POWER_EVENT/pe3.jpg",
-        "POWER_EVENT/pe4.jpg"
+          "POWER_EVENT/pe1.jpg",
+          "POWER_EVENT/pe2.jpg",
+          "POWER_EVENT/pe3.jpg",
+          "POWER_EVENT/pe4.jpg"
       ]
-    }
-  ]
+  },
+  {
+      "id": 3,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Role of PMU in Smart Grids",
+      "year": 2023,
+      "date": "November 22, 2023",
+      "speaker": "Dr. Ritula Thakur",
+      "images": [
+          "PMU_EVENT/image.png",
+          "PMU_EVENT/image copy.png",
+          "PMU_EVENT/image copy 2.png",
+          "PMU_EVENT/image copy.png"
+        ]
+  },
+  {
+      "id": 4,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "CASA: Pathways to Recover: A Journey Beyond Addiction",
+      "year": 2024,
+      "date": "January 27, 2024",
+      "speaker": "Vaibhav Goyal, Harsh Raj",
+      "images": ["CASA_EVENT/image.png",
+          "CASA_EVENT/image copy.png",
+          "CASA_EVENT/image copy 2.png",
+          "CASA_EVENT/image copy 3.png"]
+  },
+  {
+      "id": 5,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Understanding the Risks: A Discussion on Weapon Possession and Its Consequences",
+      "year": 2024,
+      "date": "February 28, 2024",
+      "speaker": "Vasu Jain, Indraniel Roy Chaudhary ",
+      "images": ["WEAPON_EVENT/image.png",
+          "WEAPON_EVENT/image copy.png",
+          "WEAPON_EVENT/image copy 2.png",
+          "WEAPON_EVENT/image copy 3.png"]
+  },
   
+  {
+      "id": 7,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Exploring the Frontiers of VLSI Design: A Hands-On Workshop",
+      "year": 2024,
+      "date": "March 7, 2024",
+      "speaker": "Dr. S. Balamurugan",
+      "images": ["VLSI_EVENT/image.png",
+      "VLSI_EVENT/image copy.png",
+      "VLSI_EVENT/image copy 2.png",
+      "VLSI_EVENT/image copy 3.png"]
+  },
+  
+  {
+      "id": 9,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Hackovation",
+      "year": 2024,
+      "date": "September 27-28, 2024",
+      "speaker": "N/A",
+      "images": []
+  },
+  {
+      "id": 10,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "AI Nexus",
+      "year": 2024,
+      "date": "September 20, 2024",
+      "speaker": "Dr. Albert Alexander Stoiner",
+      "images": []
+  },
+  {
+      "id": 11,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "CircuitWave",
+      "year": 2024,
+      "date": "September 20, 2024",
+      "speaker": "Dr. Rani C.",
+      "images": []
+  },
+  {
+      "id": 12,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Machine Learning Using MATLAB 2.0",
+      "year": 2024,
+      "date": "September 27, 2024",
+      "speaker": "Dr. Sauvik chatterjee",
+      "images": []
+  },
+  {
+      "id": 13,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "IEEE Region 10 Sponsored 36-hour Hackathon on Affordable Medical Device Development",
+      "year": 2024,
+      "date": "October 3-4, 2024",
+      "speaker": "N/A",
+      "images": ["MEDICALHACK/image.png",
+      "MEDICALHACK/image copy.png",
+      "MEDICALHACK/image copy 4.png",
+      "MEDICALHACK/image copy 3.png"]
+  },
+  {
+      "id": 14,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Rocketronics: The Role of Electronics in Rocketry (Day 1)",
+      "year": 2024,
+      "date": "October 7, 2024",
+      "speaker": "Mr. Belwin Edward J",
+      "images": []
+  },
+  {
+      "id": 15,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Beyond Launch: The Role of Energy and Control in Space Missions (Day 2)",
+      "year": 2024,
+      "date": "October 8, 2024",
+      "speaker": "Dr. Albert Alexander, Ms. Chitra, Mr. Rashmi Ranjan",
+      "images": [
+        "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.30_35c93266.jpg",
+        "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.30_39e78c5b.jpg",
+        "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.34_0829b57d.jpg",
+        "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.36_a958bdad.jpg"
+      ]
+  }
+]

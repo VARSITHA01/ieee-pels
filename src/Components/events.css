@@ -1,58 +1,106 @@
 /* Basic Styles for Menu and Dropdown */
 .menu-container {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  margin-bottom: 10px;
+}
+
+.dropdown-item select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-item label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.eventstitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Event Cards Layout */
+.events-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.event-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.event-info {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Event Images in a 2x2 Grid */
+.event-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Space between images */
+  margin-top: 10px;
+}
+
+.event-image {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensures square images */
+  object-fit: cover; /* Crops images to fit grid cells */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .menu-container {
+    max-width: 100%;
   }
-  
-  .dropdown-item {
-    margin-bottom: 10px;
+
+  .event-card {
+    max-width: 90%;
   }
-  
-  .dropdown-item select {
-    width: 100%;
-    padding: 8px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+
+  .event-images {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
   }
-  
-  .dropdown-item label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-  }
-  
-  .eventstitle {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-  
-  .event-info {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .event_colx {
-    margin-bottom: 15px;
-  }
-  
-  img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  /* Accordion Styles */
-  .accordion-button {
-    background-color:skyblue;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-  
- 
-  
+}
