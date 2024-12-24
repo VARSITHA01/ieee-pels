@@ -6,7 +6,7 @@ import Contact from './Components/Contact';
 import Achivements from './Components/Achivements';
 import Events from './Components/Events';
 import Scopemembers from './Components/Scopemembers';
-import Committee from './Components/Committee';
+import Committee from './Components/committee';
 import About from './Components/About';
 import {
   BrowserRouter,
@@ -26,7 +26,7 @@ function App() {
           <Route path='/about'
           element={<><About /></>}>
         </Route>
-          <Route path='/committee'
+          <Route path='/Committee'
           element={<><Committee /></>} />
           <Route path='/scopemembers'
           element={<><Scopemembers /></>} />

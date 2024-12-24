@@ -9,8 +9,8 @@ function Contact() {
       {/* Contact details for Dr. Albert Alexander S. */}
       <div className="contact_details_with_image">
         <img 
-          src="public\albert_alexander_s.jpeg" 
-          alt="Dr. Albert Alexander S." 
+          src="facultycoordinator\albert_alexander_s.jpeg" 
+          
           className="contact_image" 
         />
         <div>
@@ -23,8 +23,7 @@ function Contact() {
       {/* Contact details for Dr. Chitra A. */}
       <div className="contact_details_with_image">
         <img 
-          src="public\chitra_a.jpeg" 
-          alt="Dr. Chitra A." 
+          src="facultycoordinator\chitra_a.jpeg" 
           className="contact_image" 
         />
         <div>
