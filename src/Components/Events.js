@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./events.css";
 import eventsjson from "./events.json"; // Ensure the events.json file is imported
 
@@ -6,31 +6,32 @@ function Events() {
   // Default year set to 2023
   const defaultYear = 2023;
 
-  // Filter events for the default year (2023)
-  const filteredEvents = eventsjson.filter((event) => event.year === defaultYear);
+  // Get unique years from the events
+  const years = [...new Set(eventsjson.map((event) => event.year))];
 
-  // Set the default event when the year is selected
-  const [selectedEvent, setSelectedEvent] = useState(filteredEvents[0]);
+  // State for selected year, selected event, and filtered events
   const [selectedYear, setSelectedYear] = useState(defaultYear);
+  const [filteredEvents, setFilteredEvents] = useState(
+    eventsjson.filter((event) => event.year === defaultYear)
+  );
+  const [selectedEvent, setSelectedEvent] = useState(filteredEvents[0] || null);
 
   // Handle year selection
   const handleYearChange = (e) => {
-    const selectedYear = e.target.value;
+    const selectedYear = parseInt(e.target.value);
     setSelectedYear(selectedYear);
 
     // Filter events based on the selected year
-    const filtered = eventsjson.filter((event) => event.year === parseInt(selectedYear));
-    setSelectedEvent(filtered[0]); // Set the first event for the selected year
+    const filtered = eventsjson.filter((event) => event.year === selectedYear);
+    setFilteredEvents(filtered);
+    setSelectedEvent(filtered[0] || null); // Set the first event for the selected year or null
   };
 
   // Handle event selection
   const handleEventChange = (e) => {
-    const selected = eventsjson.find((event) => event.id === parseInt(e.target.value));
-    setSelectedEvent(selected);
+    const selected = filteredEvents.find((event) => event.id === parseInt(e.target.value));
+    setSelectedEvent(selected || null);
   };
-
-  // Get unique years from the events
-  const years = [...new Set(eventsjson.map((event) => event.year))];
 
   return (
     <div className="events animate__animated animate__fadeIn">
@@ -41,7 +42,7 @@ function Events() {
         {/* Dropdown menu for year selection */}
         <div className="dropdown-item">
           <label htmlFor="year">Choose Year</label>
-          <select id="year" onChange={handleYearChange} value={selectedYear}>
+          <select id="year" onChange={handleYearChange} value={selectedYear || ""}>
             <option value="">Choose Year</option>
             {years.map((year) => (
               <option key={year} value={year}>
@@ -52,7 +53,7 @@ function Events() {
         </div>
 
         {/* Dropdown menu for event selection */}
-        {selectedYear && (
+        {filteredEvents.length > 0 && (
           <div className="dropdown-item">
             <label htmlFor="event">Choose Event</label>
             <select id="event" onChange={handleEventChange} value={selectedEvent?.id || ""}>
@@ -67,6 +68,7 @@ function Events() {
         )}
       </div>
 
+      {/* Display selected event details */}
       {selectedEvent && (
         <div className="accordion accordion-flush events_list" id="accordionFlushExample">
           <div className="accordion-item">
@@ -90,7 +92,8 @@ function Events() {
               <div className="accordion-body">
                 <div className="event_info">
                   <strong>Date:</strong> {selectedEvent.date} <br />
-                  <strong>Speaker:</strong> {selectedEvent.speaker} <br /><br />
+                  <strong>Speaker:</strong> {selectedEvent.speaker} <br />
+                  <br />
                 </div>
                 <div className="row event_rowx">
                   {selectedEvent.images.map((image, index) => (
