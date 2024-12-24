@@ -54,3 +54,83 @@
     transform: scale(1.1); /* Slight zoom effect */
     transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.contact {
+    background-color: white;
+    width: 100%;
+    height: auto; /* Adjust to content height */
+    padding: 40px 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacttitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    text-align: center; /* Center the title */
+    margin-bottom: 30px;
+}
+
+.contact_card {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9; /* Light card background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover transition */
+}
+
+.contact_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+}
+
+.contact_image {
+    width: 100px; /* Adjust as per your preference */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid rgb(0, 70, 105);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact_image:hover {
+    transform: scale(1.1); /* Zoom on hover */
+}
+
+.contact_info {
+    flex: 1; /* Allow text to fill the remaining space */
+}
+
+.contact_name {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.contact_position {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555; /* Slightly lighter text for position */
+    margin-bottom: 10px;
+}
+
+.contact_email {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.contact_email:hover {
+    text-decoration: underline; /* Highlight email link on hover */
+    cursor: pointer;
+}

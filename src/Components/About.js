@@ -1,20 +1,28 @@
-import React from 'react'
-import './about.css'
+import React, { useEffect } from 'react';
+import './about.css';
 
 function About() {
+  useEffect(() => {
+    // Add the pop animation class after the component is mounted
+    const titleElement = document.querySelector('.abouttitle');
+    if (titleElement) {
+      titleElement.classList.add('popAnimation');
+    }
+  }, []);
+
   return (
-    <div className='about animate__animated animate__fadeIn'>
-      <div className="abouttitle animate__animated animate__slideInLeft">About Our Chapter</div>
+    <div className='about'>
+      <div className="abouttitle">About Our Chapter</div>
       <div className="aboutsec aboutsec1">
         <p className="aboutsectitle aboutsec1title">Our Institution</p>
         <div className="aboutsec1flex">
-        <div className="aboutsec1left">
-          <div className="vit_logo"></div>
-        </div>
-        <div className="aboutsec1right">
-        Vellore Institute of Technology (VIT) is a private research deemed university located in Katpadi in Vellore, Tamil Nadu, India. The institution offers 66 Undergraduate, 58 Postgraduate, 15 Integrated, 2 Research and 2 M.Tech Industrial Programmes. It has campuses in Vellore and Chennai and sister universities in Amaravati, Bhopal and Bengaluru.<br/>
-        VIT consolidated its disciplines into 20 Schools of Study with the addition of the VIT Law School at its Chennai campus. VIT implements the Fully Flexible Credit System (FFCS) which gives the students to choose and make their own timetables by choosing the subjects and the faculties for the next semester. 33 Professors of VIT are among the top 2% scientists of the world as shown in a survey conducted by Stanford University, USA in 2021.
-        </div>
+          <div className="aboutsec1left">
+            <div className="vit_logo"></div>
+          </div>
+          <div className="aboutsec1right">
+            Vellore Institute of Technology (VIT) is a private research deemed university located in Katpadi in Vellore, Tamil Nadu, India. The institution offers 66 Undergraduate, 58 Postgraduate, 15 Integrated, 2 Research and 2 M.Tech Industrial Programmes. It has campuses in Vellore and Chennai and sister universities in Amaravati, Bhopal and Bengaluru.<br />
+            VIT consolidated its disciplines into 20 Schools of Study with the addition of the VIT Law School at its Chennai campus. VIT implements the Fully Flexible Credit System (FFCS) which gives the students to choose and make their own timetables by choosing the subjects and the faculties for the next semester. 33 Professors of VIT are among the top 2% scientists of the world as shown in a survey conducted by Stanford University, USA in 2021.
+          </div>
         </div>
       </div>
       <div className="aboutsec aboutsec2">
@@ -51,4 +59,4 @@ function About() {
   )
 }
 
-export default About
+export default About;

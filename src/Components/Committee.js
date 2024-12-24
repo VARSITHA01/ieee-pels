@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import './committee.css'
-import members from './committee_members.json'
-import advisoryBoard from './advisoryboard.json'
-import MemberCards from './MemberCards'
+import React, { useState, useEffect, useRef } from 'react';
+import './committee.css';
+import members from './committee_members.json';
+import advisoryBoard from './advisoryboard.json';
+import MemberCards from './MemberCards';
 
 function Committee() {
   // Set default tenure to 2023-2024
@@ -17,10 +17,29 @@ function Committee() {
     setSelectedTenure(tenure);
   };
 
+  // Animation setup using JavaScript
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    const titleElement = titleRef.current;
+    if (titleElement) {
+      // Initial setup for the title position
+      titleElement.style.opacity = 0;
+      titleElement.style.transform = 'translateY(50px)';
+      titleElement.style.transition = 'transform 1s ease-out, opacity 1s ease-out';
+
+      // Trigger the animation
+      setTimeout(() => {
+        titleElement.style.opacity = 1;
+        titleElement.style.transform = 'translateY(0)';
+      }, 100); // Delay to ensure styles are applied before transition
+    }
+  }, []);
+
   return (
-    <div className='committee animate__animated animate__fadeIn'>
+    <div className='committee'>
       <center>
-        <div className="committeetitle animate__animated animate__slideInLeft">Committee Members</div>
+        <div className="committeetitle" ref={titleRef}>Committee Members</div>
       </center>
 
       {/* Dropdown Menu to select tenure */}
@@ -75,7 +94,7 @@ function Committee() {
         </div>
       )}
     </div>
-  )
+  );
 }
 
 export default Committee;

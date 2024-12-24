@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-.Home{
+.Home {
     background-color: white;
     width: 100%;
     height: fit-content;
@@ -12,14 +12,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.homesec1{
+.homesec1 {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 40px;
     flex: 0.6;
 }
 
-.homesec2{
+.homesec2 {
     background-color: white;
     height: fit-content;
     flex: 0.4;
@@ -28,82 +28,84 @@
     border-left: solid 1px rgb(0, 70, 105);
 }
 
-.homewelcome{
+.homewelcome {
     font-size: 30px;
     font-weight: 600;
-    
 }
 
-.homechaptername{
+.homechaptername {
     font-size: 42px;
     font-weight: 700;
     color: rgb(0, 70, 105);
     line-height: 55px;
 }
 
-.homeclgname{
+.homeclgname {
     font-size: 20px;
     font-weight: 500;
 }
 
-.homeintrotitle{
+.homeintrotitle {
     font-size: 20px;
     font-weight: 600;
     color: rgb(0, 70, 105);
 }
 
-.homebranchvisiontitle{
+.homebranchvisiontitle {
     font-size: 20px;
     font-weight: 600;
     color: rgb(0, 70, 105);
 }
 
-.homebranchmissiontitle{
+.homebranchmissiontitle {
     font-size: 20px;
     font-weight: 600;
     color: rgb(0, 70, 105);
 }
 
-.homechapterlogosec2{
+.homechapterlogosec2 {
     background-image: url("./chapter_logo.png");
-    height: 300px;
-    background-size: contain;
+    height: 300px; /* Adjust the height as needed */
+    width: 300px; /* Set the width equal to the height to make it a perfect circle */
+    background-size: cover; /* Ensures the image covers the entire circle */
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center; /* Center the image within the circle */
+    border-radius: 50%; /* Makes the shape circular */
+    margin: 0 auto; /* Center the logo horizontally */
 }
 
-.homeupcomingevents{
+.homeupcomingevents {
     padding: 30px;
     padding-top: 0px;
     margin-top: -20px;
 }
 
-.homeupcomingeventstitle{
+.homeupcomingeventstitle {
     font-size: 25px;
     font-weight: 700;
     color: rgb(0, 70, 105);
 }
 
-.homeimplinks{
+.homeimplinks {
     padding: 30px;
     padding-top: 0px;
     margin-top: -20px;
 }
 
-.homeimplinkstitle{
+.homeimplinkstitle {
     font-size: 25px;
     font-weight: 700;
     color: rgb(0, 70, 105);
 }
 
 @media screen and (max-width: 800px) {
-  .Home{
-      flex-direction: column-reverse;
-  }
-  .homesec2{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 40px;
-    flex: 0.6;
+    .Home {
+        flex-direction: column-reverse;
+    }
+    .homesec2 {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 40px;
+        flex: 0.6;
     }
 }
