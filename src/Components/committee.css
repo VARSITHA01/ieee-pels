@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-/* General Styling for Committee Section */
+
 /* General Styling for Committee Section */
 .committee {
     background-color: white;
@@ -80,5 +80,98 @@
   
   .dropdown:hover .dropdown-button {
     background-color: rgb(0, 55, 85);
+  }
+  /* Advisory Board Section */
+/* Advisory Board Styling */
+.advisoryboard {
+    background-color: #f9f9f9; /* Light gray background for the advisory board section */
+    padding: 40px 10%; /* Padding for spacing */
+    margin-top: 40px; /* Margin to separate it from the committee section */
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .advisorytitle {
+    color: rgb(0, 70, 105); /* Same color as the committee title */
+    font-size: 36px; /* Slightly smaller than committee title */
+    font-weight: 700;
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .advisoryboard .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the content with space */
+  }
+  
+  .advisoryboard .colx {
+    margin-bottom: 40px; /* Space between advisory board member cards */
+    text-align: center; /* Center the content inside each column */
+  }
+  
+  .advisoryboard .col-sm-4 {
+    width: 30%; /* Width of each member card */
+    margin-bottom: 20px; /* Space between the rows */
+  }
+  
+  .advisoryboard .member-card {
+    background-color: white; /* White background for cards */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for card depth */
+    transition: transform 0.3s ease-in-out; /* Smooth scale on hover */
+  }
+  
+  .advisoryboard .member-card:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+  }
+  
+  
+  
+  .advisoryboard .member-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 70, 105); /* Darker color for the name */
+    margin-bottom: 5px; /* Space between name and position */
+  }
+  
+  .advisoryboard .member-position {
+    font-size: 14px;
+    color: gray; /* Lighter color for position */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 1200px) {
+    .advisoryboard .col-sm-4 {
+      width: 45%; /* On medium screens, two columns per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .advisoryboard .col-sm-4 {
+      width: 90%; /* On smaller screens, each card takes full width */
+    }
+  
+    .advisoryboard {
+      padding: 20px 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .advisorytitle {
+      font-size: 28px; /* Smaller font size for title */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .advisoryboard .col-sm-4 {
+      width: 100%; /* On very small screens, each card takes full width */
+    }
+  
+    .advisoryboard {
+      padding: 10px 3%; /* Further reduce padding */
+    }
+  
+    .advisorytitle {
+      font-size: 24px; /* Even smaller font size for title */
+    }
   }
   

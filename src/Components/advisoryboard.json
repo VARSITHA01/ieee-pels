@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "member_position": "Advisory Board",
+        "member_name": "Aneesh Chatterjee",
+        "member_img_link": "IMG-20240307-WA0018.jpg",
+        "tenure": "2024-2025"
+    },
+    {
+        "id": 2,
+        "member_position": "Advisory Board",
+        "member_name": "Milind Nosaliya",
+        "member_img_link": "IMG-20240307-WA0014.jpg",
+        "tenure": "2024-2025"
+    },
+    {
+        "id": 3,
+        "member_position": "Advisory Board",
+        "member_name": "Srishti Darkunde",
+        "member_img_link": "IMG-20240307-WA0010.jpg",
+        "tenure": "2024-2025"
+    },
+    
+    {
+        "id":4 ,
+        "member_position": "Advisory Board",
+        "member_name": "Nimit Jain",
+        "member_img_link": "IMG-20240307-WA0017.jpg",
+        "tenure": "2024-2025"
+    },
+   
+    
+    {
+        "id": 5,
+        "member_position": "Advisory Board",
+        "member_name": "Alok Das",
+        "member_img_link": "IMG-20240307-WA0012.jpg",
+        "tenure": "2024-2025"
+    },
+    {
+        "id": 6,
+        "member_position": "Advisory Board",
+        "member_name": "Dushyant Mahto",
+        "member_img_link": "IMG-20240307-WA0008.jpg",
+        "tenure": "2024-2025"
+    }
+   
+]
