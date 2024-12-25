@@ -4,7 +4,7 @@ import members from './committee_members.json';
 import advisoryBoard from './advisoryboard.json';
 import MemberCards from './MemberCards';
 
-function committee() {
+function Committee() {
   // Set default tenure to 2023-2024
   const [selectedTenure, setSelectedTenure] = useState('2023-2024');
 
