@@ -59,7 +59,7 @@ function Events() {
                   <img
                     key={index}
                     src={image}
-                    alt={`${event.event_title} image ${index + 1}`}
+                    alt={`Image from the event: ${event.event_title} - ${index + 1}`}
                     className="event-image"
                   />
                 ))}
