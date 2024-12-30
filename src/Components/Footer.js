@@ -1,34 +1,31 @@
 import React from 'react'
 import './footer.css'
 import { Link } from "react-router-dom";
-// import Headertop from './Headertop'
-// import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import TwitterIcon from '@mui/icons-material/Twitter';
-// import YouTubeIcon from '@mui/icons-material/YouTube';
 import HomeIcon from '@mui/icons-material/Home';
-// import GitHubIcon from '@mui/icons-material/GitHub';
-// import MailIcon from '@mui/icons-material/Mail';
+import MailIcon from '@mui/icons-material/Mail';
 
 function Footer() {
   return (
     <div className='footer'>
       <div className="footersec1">
         <Link to={"/"}><p><HomeIcon /></p></Link>
-        {/* <p><LinkedInIcon /></p> */}
+        <a 
+          href="https://www.linkedin.com/company/105868654/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BvCKhIcPVQeuRrLMS74DaqQ%3D%3D" 
+          rel='noreferrer' 
+          target="_blank"
+        >
+          <p><LinkedInIcon /></p>
+        </a>
         <Link to={"https://instagram.com/ieeepels_vitvellore?igshid=MzRlODBiNWFlZA=="} rel='noreferrer' target="_blank"><p><InstagramIcon /></p></Link>
-        {/* <p><GitHubIcon /></p> */}
-        {/* <p><TwitterIcon /></p> */}
-        {/* <p><FacebookIcon /></p> */}
-        {/* <p><YouTubeIcon /></p> */}
-        {/* <p><MailIcon /></p> */}
+        <a href="mailto:ieeepels@vit.ac.in" rel='noreferrer'><p><MailIcon /></p></a>
       </div>
       <div className="footersec2">
         <p>&#169; Copyright 2023 IEEE - All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions. A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
       </div>
       <div className="footersec3">
-        {/* <Headertop /> */}
+        {/* Add any additional footer content here */}
       </div>
     </div>
   )
