@@ -7,13 +7,16 @@ import MemberCards from './MemberCards';
 function Committee() {
   const [selectedTenure, setSelectedTenure] = useState('2023-2024');
 
+  // Filter members and advisory board based on the selected tenure
   const filteredMembers = members.filter(member => member.tenure === selectedTenure);
   const filteredAdvisoryBoard = advisoryBoard.filter(member => member.tenure === selectedTenure);
 
+  // Handle tenure selection change
   const handleTenureSelection = (e) => {
     setSelectedTenure(e.target.value);
   };
 
+  // Title animation reference
   const titleRef = useRef(null);
 
   useEffect(() => {
@@ -31,12 +34,14 @@ function Committee() {
   }, []);
 
   return (
-    <div className='committee'>
+    <div className="committee">
       <center>
-        <div className="committeetitle" ref={titleRef}>Committee Members</div>
+        <div className="committeetitle" ref={titleRef}>
+          Committee Members
+        </div>
       </center>
 
-      {/* Dropdown Menu to select tenure */}
+      {/* Dropdown Menu to Select Tenure */}
       <div className="menu-container">
         <div className="dropdown-item">
           <label htmlFor="tenure">Select Tenure</label>
@@ -44,6 +49,7 @@ function Committee() {
             id="tenure"
             onChange={handleTenureSelection}
             value={selectedTenure}
+            aria-label="Select Committee Tenure"
           >
             <option value="2023-2024">2023-2024</option>
             <option value="2024-2025">2024-2025</option>
@@ -68,7 +74,7 @@ function Committee() {
         </div>
       </div>
 
-      {/* Advisory Board Section if tenure is 2024-2025 */}
+      {/* Advisory Board Section for 2024-2025 Tenure */}
       {selectedTenure === '2024-2025' && (
         <div className="advisoryboard">
           <center>
@@ -78,12 +84,12 @@ function Committee() {
             <div className="row">
               {filteredAdvisoryBoard.map(member => (
                 <div className="col-sm-4 colx" key={member.id}>
-                  <MemberCards
-                    member_img_link={member.member_img_link}
-                    member_name={member.member_name}
-                    member_position={member.member_position}
-                  />
-                </div>
+                <MemberCards
+                  member_img_link={member.member_img_link}
+                  member_name={member.member_name}
+                  member_position={member.member_position}
+                />
+              </div>
               ))}
             </div>
           </div>

@@ -84,7 +84,7 @@
   /* Advisory Board Section */
 /* Advisory Board Styling */
 .advisoryboard {
-    background-color: #f9f9f9; /* Light gray background for the advisory board section */
+    background-color: white; /* Light gray background for the advisory board section */
     padding: 40px 10%; /* Padding for spacing */
     margin-top: 40px; /* Margin to separate it from the committee section */
     border-radius: 8px; /* Rounded corners for the section */

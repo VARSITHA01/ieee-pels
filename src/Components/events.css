@@ -1,51 +1,49 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;700&display=swap');
-.eventstitle {
-  font-size: 40px; /* Similar font size to 'abouttitle' */
-  font-weight: 700; /* Bold font weight */
-  color: rgb(0, 70, 105); /* Blue color like 'abouttitle' */
-  text-align: center; /* Center align the title */
-  margin-bottom: 25px; /* Space below the title */
-  padding-bottom: 15px; /* Optional padding for consistency */
-  text-decoration: none; /* Ensure no underline */
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+/* General Styling for Dropdown Menu */
 .menu-container {
   width: 100%;
   max-width: 300px;
   margin: 20px auto;
   padding: 15px;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
 }
 
 .dropdown-item {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.dropdown-item label {
+  font-weight: 600;
+  color: rgb(0, 70, 105);
+  margin-bottom: 8px;
+  display: block;
 }
 
 .dropdown-item select {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   font-size: 14px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: rgb(0, 70, 105);
 }
 
-.dropdown-item label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
-}
-
+/* Events Section Title */
 .eventstitle {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
+  color: rgb(0, 70, 105);
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 20px;
-  color: #333;
+  text-align: center;
 }
 
-/* Event Cards Layout */
+/* Events Cards Layout */
 .events-cards {
   display: flex;
   flex-wrap: wrap;
@@ -54,56 +52,59 @@
   margin-top: 20px;
 }
 
+/* Individual Event Card */
 .event-card {
-  background: #fff;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   max-width: 300px;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
 }
 
 .event-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .event-title {
-  font-size: 1.5rem;
+  font-size: 18px;
   margin-bottom: 10px;
-  color: #007bff;
+  color: rgb(0, 70, 105);
   font-weight: bold;
 }
 
 .event-info {
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #555;
 }
 
-/* Event Images in a 2x2 Grid */
+/* Event Images Grid */
 .event-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 10px; /* Space between images */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   margin-top: 10px;
 }
 
 .event-image {
   width: 100%;
-  aspect-ratio: 1 / 1; /* Ensures square images */
-  object-fit: cover; /* Crops images to fit grid cells */
+  aspect-ratio: 1 / 1; /* Square images */
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Styling */
+/* Responsive Design */
 @media (max-width: 768px) {
   .menu-container {
     max-width: 100%;
+    padding: 10px;
   }
 
   .event-card {
