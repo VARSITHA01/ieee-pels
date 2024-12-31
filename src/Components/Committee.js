@@ -43,6 +43,7 @@ function Committee() {
             value={selectedTenure}
             aria-label="Select Committee Tenure"
           >
+            <option value="2022-2023">2022-2023</option>
             <option value="2023-2024">2023-2024</option>
             <option value="2024-2025">2024-2025</option>
           </select>
@@ -60,7 +61,7 @@ function Committee() {
             />
             <div className="member-info">
               <a
-                href={member.linkedin_profile} // Use linkedin_profile from JSON
+                href={member.linkedin_profile}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="member-name"
@@ -74,7 +75,7 @@ function Committee() {
       </div>
 
       {/* Advisory Board Section */}
-      {selectedTenure === '2024-2025' && (
+      {filteredAdvisoryBoard.length > 0 && (
         <div className="advisoryboard">
           <center>
             <div className="advisorytitle">Advisory Board</div>
@@ -89,7 +90,7 @@ function Committee() {
                 />
                 <div className="member-info">
                   <a
-                    href={member.linkedin_profile} // Use linkedin_profile from JSON
+                    href={member.linkedin_profile}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="member-name"
