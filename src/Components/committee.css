@@ -91,3 +91,69 @@
     margin-bottom: 20px;
     text-align: center;
 }
+
+/* Media Queries for Responsiveness */
+
+/* For medium screens (tablets, between 600px and 1024px) */
+@media (max-width: 1024px) {
+    .committee {
+        padding: 40px 5%;
+    }
+
+    .committeetitle {
+        font-size: 32px;
+    }
+
+    .committeemembers {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on medium screens */
+    }
+
+    .membersx .member-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .membersx .member-name {
+        font-size: 16px;
+    }
+
+    .membersx .member-position {
+        font-size: 12px;
+    }
+
+    .advisorytitle {
+        font-size: 32px;
+    }
+}
+
+/* For small screens (mobile, below 600px) */
+@media (max-width: 600px) {
+    .committee {
+        padding: 30px 5%;
+    }
+
+    .committeetitle {
+        font-size: 28px;
+    }
+
+    .committeemembers {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on phones */
+    }
+
+    .membersx .member-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .membersx .member-name {
+        font-size: 14px;
+    }
+
+    .membersx .member-position {
+        font-size: 10px;
+    }
+
+    .advisorytitle {
+        font-size: 28px;
+    }
+}
