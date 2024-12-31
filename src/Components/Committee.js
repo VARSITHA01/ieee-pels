@@ -2,22 +2,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import './committee.css';
 import members from './committee_members.json';
 import advisoryBoard from './advisoryboard.json';
-import MemberCards from './MemberCards';
 
 function Committee() {
-  const [selectedTenure, setSelectedTenure] = useState('2023-2024');
+  const [selectedTenure, setSelectedTenure] = useState('2024-2025');
+  const titleRef = useRef(null);
 
-  // Filter members and advisory board based on the selected tenure
   const filteredMembers = members.filter(member => member.tenure === selectedTenure);
   const filteredAdvisoryBoard = advisoryBoard.filter(member => member.tenure === selectedTenure);
-
-  // Handle tenure selection change
-  const handleTenureSelection = (e) => {
-    setSelectedTenure(e.target.value);
-  };
-
-  // Title animation reference
-  const titleRef = useRef(null);
 
   useEffect(() => {
     const titleElement = titleRef.current;
@@ -44,10 +35,11 @@ function Committee() {
       {/* Dropdown Menu to Select Tenure */}
       <div className="menu-container">
         <div className="dropdown-item">
-          <label htmlFor="tenure">Select Tenure</label>
+          <label htmlFor="tenure-select" className="dropdown-label">Select Tenure</label>
           <select
-            id="tenure"
-            onChange={handleTenureSelection}
+            id="tenure-select"
+            className="dropdown"
+            onChange={(e) => setSelectedTenure(e.target.value)}
             value={selectedTenure}
             aria-label="Select Committee Tenure"
           >
@@ -59,39 +51,41 @@ function Committee() {
 
       {/* Committee Members Section */}
       <div className="committeemembers">
-        <div className="container membersx">
-          <div className="row">
-            {filteredMembers.map(member => (
-              <div className="col-sm-4 colx" key={member.id}>
-                <MemberCards
-                  member_img_link={member.member_img_link}
-                  member_name={member.member_name}
-                  member_position={member.member_position}
-                />
-              </div>
-            ))}
+        {filteredMembers.map(member => (
+          <div className="membersx" key={member.id}>
+            <img
+              src={member.member_img_link}
+              alt={member.member_name}
+              className="member-img"
+            />
+            <div className="member-info">
+              <div className="member-name">{member.member_name}</div>
+              <div className="member-position">{member.member_position}</div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
 
-      {/* Advisory Board Section for 2024-2025 Tenure */}
+      {/* Advisory Board Section */}
       {selectedTenure === '2024-2025' && (
         <div className="advisoryboard">
           <center>
             <div className="advisorytitle">Advisory Board</div>
           </center>
-          <div className="container membersx">
-            <div className="row">
-              {filteredAdvisoryBoard.map(member => (
-                <div className="col-sm-4 colx" key={member.id}>
-                <MemberCards
-                  member_img_link={member.member_img_link}
-                  member_name={member.member_name}
-                  member_position={member.member_position}
+          <div className="committeemembers">
+            {filteredAdvisoryBoard.map(member => (
+              <div className="membersx" key={member.id}>
+                <img
+                  src={member.member_img_link}
+                  alt={member.member_name}
+                  className="member-img"
                 />
+                <div className="member-info">
+                  <div className="member-name">{member.member_name}</div>
+                  <div className="member-position">{member.member_position}</div>
+                </div>
               </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       )}
