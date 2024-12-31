@@ -55,11 +55,18 @@ function Committee() {
           <div className="membersx" key={member.id}>
             <img
               src={member.member_img_link}
-              alt={member.member_name}
+              alt={`Profile of ${member.member_name}`}
               className="member-img"
             />
             <div className="member-info">
-              <div className="member-name">{member.member_name}</div>
+              <a
+                href={member.linkedin_profile} // Use linkedin_profile from JSON
+                target="_blank"
+                rel="noopener noreferrer"
+                className="member-name"
+              >
+                {member.member_name}
+              </a>
               <div className="member-position">{member.member_position}</div>
             </div>
           </div>
@@ -77,11 +84,18 @@ function Committee() {
               <div className="membersx" key={member.id}>
                 <img
                   src={member.member_img_link}
-                  alt={member.member_name}
+                  alt={`Profile of ${member.member_name}`}
                   className="member-img"
                 />
                 <div className="member-info">
-                  <div className="member-name">{member.member_name}</div>
+                  <a
+                    href={member.linkedin_profile} // Use linkedin_profile from JSON
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="member-name"
+                  >
+                    {member.member_name}
+                  </a>
                   <div className="member-position">{member.member_position}</div>
                 </div>
               </div>
