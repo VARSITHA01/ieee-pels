@@ -61,12 +61,19 @@ function Events() {
             <div className="event-card" key={event.id}>
               <h3 className="event-title">{event.event_title}</h3>
               <p>
-                <strong>Date:</strong>{" "}
-                {new Date(event.date).toLocaleDateString()}
+                <strong>Date:</strong> {new Date(event.date).toLocaleDateString()}
               </p>
               <p>
                 <strong>Speaker:</strong> {event.speaker || "TBA"}
               </p>
+
+              {/* Display sponsors if available */}
+              {event.sponsors && event.sponsors.length > 0 && (
+                <p>
+                  <strong>Sponsors:</strong> {event.sponsors.join(", ")}
+                </p>
+              )}
+
               <div className="event-images">
                 {event.images && event.images.length > 0 ? (
                   event.images.map((image, index) => (
