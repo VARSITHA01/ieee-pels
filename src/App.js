@@ -3,10 +3,10 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
-import Achivements from './Components/Achivements'; // Fixed typo
+import Achivements from './Components/Achivements'; 
 import Events from './Components/Events';
-import Scopemembers from './Components/Scopemembers'; // Fixed case mismatch
-import Committee from './Components/committee'; // Fixed case mismatch
+import Scopemembers from './Components/Scopemembers'; 
+import Committee from './Components/Committee'; 
 import About from './Components/About';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
