@@ -175,102 +175,104 @@
         "tenure": "2024-2025",
         "linkedin_profile": "https://www.linkedin.com/in/yash-sahai-593a982b8?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAExVyj8BtzkmUKJacHMkwBxj-kE59o3qKyo&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BaT%2BTSDs3QWumaJ7C6ulI4w%3D%3D"
     },
-    {
-        "id": 23,
-        "member_position": "Treasurer",
-        "member_name": "Eshan Kumar S",
-        "member_img_link": "BOARDOF22-23/im4.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 24,
-        "member_position": "Web Master",
-        "member_name": "Piyush Dubey",
-        "member_img_link": "BOARDOF22-23/im12.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 25,
-        "member_position": "Web Master",
-        "member_name": "Milind Nosaliya",
-        "member_img_link": "BOARDOF22-23/im2.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 26,
-        "member_position": "Research and Development Head",
-        "member_name": "Aryan Chaturvedi",
-        "member_img_link": "BOARDOF22-23/im6.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 27,
-        "member_position": "Editorial Head",
-        "member_name": "Dushyant Mato",
-        "member_img_link": "BOARDOF22-23/im1.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 28,
-        "member_position": "Human Resource Head",
-        "member_name": "Anirudh Garg",
-        "member_img_link": "BOARDOF22-23/im5.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 29,
-        "member_position": "Design Head",
-        "member_name": "Arihant Tiwari",
-        "member_img_link": "BOARDOF22-23/im3.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 30,
-        "member_position": "Marketing Head",
-        "member_name": "Aryan Paruthi",
-        "member_img_link": "BOARDOF22-23/im13.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 31,
-        "member_position": "Management Head",
-        "member_name": "Sparsh Singh",
-        "member_img_link": "BOARDOF22-23/im9.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 32,
-        "member_position": "Technical Head",
-        "member_name": "Aryan Gadhiya",
-        "member_img_link": "BOARDOF22-23/im14.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 33,
-        "member_position": "Vice Secretary",
-        "member_name": "Srishti Darkunde",
-        "member_img_link": "BOARDOF22-23/im7.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 34,
-        "member_position": "Secretary",
-        "member_name": "Harsha V",
-        "member_img_link": "BOARDOF22-23/im10.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 35,
-        "member_position": "Vice Chairperson",
-        "member_name": "Aneesh Chatterjee",
-        "member_img_link": "BOARDOF22-23/im11.jpg",
-        "tenure": "2022-2023"
-    },
-    {
-        "id": 36,
-        "member_position": "Chairperson",
-        "member_name": "Kevin Fabis Jebaraj",
-        "member_img_link": "BOARDOF22-23/im8.jpg",
-        "tenure": "2022-2023"
-    }
-]
+    
+        {
+            "id": 23,
+            "member_position": "Chairperson",
+            "member_name": "Kevin Fabis Jebaraj",
+            "member_img_link": "BOARDOF22-23/im8.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 24,
+            "member_position": "Vice Chairperson",
+            "member_name": "Aneesh Chatterjee",
+            "member_img_link": "BOARDOF22-23/im11.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 25,
+            "member_position": "Secretary",
+            "member_name": "Harsha V",
+            "member_img_link": "BOARDOF22-23/im10.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 26,
+            "member_position": "Vice Secretary",
+            "member_name": "Srishti Darkunde",
+            "member_img_link": "BOARDOF22-23/im7.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 27,
+            "member_position": "Treasurer",
+            "member_name": "Eshan Kumar S",
+            "member_img_link": "BOARDOF22-23/im4.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 28,
+            "member_position": "Web Master",
+            "member_name": "Piyush Dubey",
+            "member_img_link": "BOARDOF22-23/im12.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 29,
+            "member_position": "Web Master",
+            "member_name": "Milind Nosaliya",
+            "member_img_link": "BOARDOF22-23/im2.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 30,
+            "member_position": "Research and Development Head",
+            "member_name": "Aryan Chaturvedi",
+            "member_img_link": "BOARDOF22-23/im6.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 31,
+            "member_position": "Editorial Head",
+            "member_name": "Dushyant Mato",
+            "member_img_link": "BOARDOF22-23/im1.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 32,
+            "member_position": "Human Resource Head",
+            "member_name": "Anirudh Garg",
+            "member_img_link": "BOARDOF22-23/im5.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 33,
+            "member_position": "Design Head",
+            "member_name": "Arihant Tiwari",
+            "member_img_link": "BOARDOF22-23/im3.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 34,
+            "member_position": "Marketing Head",
+            "member_name": "Aryan Paruthi",
+            "member_img_link": "BOARDOF22-23/im13.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 35,
+            "member_position": "Management Head",
+            "member_name": "Sparsh Singh",
+            "member_img_link": "BOARDOF22-23/im9.jpg",
+            "tenure": "2022-2023"
+        },
+        {
+            "id": 36,
+            "member_position": "Technical Head",
+            "member_name": "Aryan Gadhiya",
+            "member_img_link": "BOARDOF22-23/im14.jpg",
+            "tenure": "2022-2023"
+        }
+    ]
+    
