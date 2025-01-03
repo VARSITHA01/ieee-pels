@@ -1,96 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
 .contact {
     background-color: white;
     width: 100%;
-    height: 60vh;
-    padding: 40px 10% 10px 10%;
-    font-family: 'Poppins', sans-serif;
-}
-
-.contacttitle {
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(0, 70, 105);
-}
-
-.contact_details_with_image {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.contact_image {
-    width: 150px; /* Adjust the size as per your requirement */
-    height: 150px;
-    border-radius: 50%; /* Circular images */
-    object-fit: cover;
-    margin-right: 20px; /* Space between image and text */
-    border: 2px solid rgb(0, 70, 105); /* Add a border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for visual depth */
-}
-
-.contact_name {
-    font-size: 22px;
-    font-weight: 600;
-    color: black;
-}
-
-.contact_position {
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
-}
-
-.contact_email {
-    font-size: 18px;
-    font-weight: 700;
-    color: rgb(0, 70, 105);
-}
-
-.contact_image:hover {
-    transform: scale(1.1); /* Slight zoom effect */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
-.contact {
-    background-color: white;
-    width: 100%;
-    height: auto; /* Adjust to content height */
     padding: 40px 10%;
     font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+    gap: 20px; /* Space between grid items */
 }
 
 .contacttitle {
     font-size: 40px;
     font-weight: 700;
     color: rgb(0, 70, 105);
-    text-align: center; /* Center the title */
+    text-align: center;
     margin-bottom: 30px;
+    grid-column: span 2; /* Title spans the full width */
 }
 
 .contact_card {
     display: flex;
     align-items: center;
-    background: #f9f9f9; /* Light card background */
-    border-radius: 12px; /* Rounded corners */
+    background: #f9f9f9;
+    border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .contact_card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .contact_image {
-    width: 100px; /* Adjust as per your preference */
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
@@ -101,11 +44,11 @@
 }
 
 .contact_image:hover {
-    transform: scale(1.1); /* Zoom on hover */
+    transform: scale(1.1);
 }
 
 .contact_info {
-    flex: 1; /* Allow text to fill the remaining space */
+    flex: 1;
 }
 
 .contact_name {
@@ -118,7 +61,7 @@
 .contact_position {
     font-size: 16px;
     font-weight: 500;
-    color: #555; /* Slightly lighter text for position */
+    color: #555;
     margin-bottom: 10px;
 }
 
@@ -127,10 +70,16 @@
     font-weight: 700;
     color: rgb(0, 70, 105);
     text-decoration: none;
-    margin-top: 5px;
 }
 
 .contact_email:hover {
-    text-decoration: underline; /* Highlight email link on hover */
+    text-decoration: underline;
     cursor: pointer;
+}
+
+/* Media query for larger screens (laptops) */
+@media (min-width: 768px) {
+    .contact {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
 }
