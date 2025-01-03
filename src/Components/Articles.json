@@ -1,16 +1,23 @@
 [
   {
-      "id": 1,
-      "title": "Breakthroughs in Power Electronics 2024",
-      "summary": "Highlights from IEEE PELS VIT Vellore",
-      "link": "https://www.linkedin.com/pulse/breakthroughs-power-electronics-2024-highlights-ieee-pels-vitv-merue/?trackingId=aH1Fquyy6KXgPKe4vi%2FB2g%3D%3D",
-      "image": "ARTICLE/images.jpg"
+    "id": 1,
+    "title": "Breakthroughs in Power Electronics 2024",
+    "summary": "Highlights from IEEE PELS VIT Vellore",
+    "link": "https://www.linkedin.com/pulse/breakthroughs-power-electronics-2024-highlights-ieee-pels-vitv-merue/?trackingId=aH1Fquyy6KXgPKe4vi%2FB2g%3D%3D",
+    "image": "ARTICLE/images.jpg"
   },
   {
-      "id": 2,
-      "title": "Power Electronics Driving the Future of Electric Vehicles",
-      "summary": "Insights from IEEE PELS VIT Vellore",
-      "link": "https://www.linkedin.com/pulse/power-electronics-driving-future-electric-vehicles-ieee-pels-vitv-vozme",
-      "image": "ARTICLE/Picture.jpg"
+    "id": 2,
+    "title": "Power Electronics Driving the Future of Electric Vehicles",
+    "summary": "Insights from IEEE PELS VIT Vellore",
+    "link": "https://www.linkedin.com/pulse/power-electronics-driving-future-electric-vehicles-ieee-pels-vitv-vozme",
+    "image": "ARTICLE/Picture.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Power Electronics: Advancing Innovation in VIT Vellore",
+    "summary": "Exploring the contributions and innovations in power electronics at IEEE PELS VIT Vellore",
+    "link": "https://www.linkedin.com/posts/ieee-pels-vitv_ieeepelsvitv-vitv-ieeeemadrassection-activity-7281010316631502848-_RZi?utm_source=share&utm_medium=member_desktop",
+    "image": "ARTICLE/download.jpeg"
   }
 ]
