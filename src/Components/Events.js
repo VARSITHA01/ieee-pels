@@ -4,8 +4,8 @@ import "animate.css";
 import eventsjson from "./events.json";
 
 function Events() {
-  // Default year set to current year
-  const defaultYear = new Date().getFullYear();
+  // Default year set to 2024
+  const defaultYear = 2024;
 
   // Extract unique years from the events JSON
   const years = [...new Set(eventsjson.map((event) => event.year))];
