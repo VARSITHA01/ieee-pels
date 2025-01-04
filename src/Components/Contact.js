@@ -23,8 +23,8 @@ function Contact() {
           />
           <div className="contact_info">
             <div className="contact_name">Dr. Albert Alexander S.</div>
-            <div className="contact_position">Faculty Co-ordinator , IEEE PELS VIT VELLORE </div>
-            <div className="contact_email">ootyalex@gmail.com</div>
+            <div className="contact_position">Faculty Co-ordinator, IEEE PELS VIT VELLORE</div>
+            <a href="mailto:ootyalex@gmail.com" className="contact_email">ootyalex@gmail.com</a>
           </div>
         </div>
       </a>
@@ -43,8 +43,8 @@ function Contact() {
           />
           <div className="contact_info">
             <div className="contact_name">Dr. Chitra A.</div>
-            <div className="contact_position">Faculty Co-ordinator , IEEE PELS VIT VELLORE </div>
-            <div className="contact_email">chitra.a@vit.ac.in</div>
+            <div className="contact_position">Faculty Co-ordinator, IEEE PELS VIT VELLORE</div>
+            <a href="mailto:chitra.a@vit.ac.in" className="contact_email">chitra.a@vit.ac.in</a>
           </div>
         </div>
       </a>
@@ -57,14 +57,14 @@ function Contact() {
       >
         <div className="contact_card">
           <img 
-            src="facultycoordinator\WhatsApp Image 2024-12-18 at 21.42.35_cf99e865.jpg" 
+            src="facultycoordinator/WhatsApp Image 2024-12-18 at 21.42.35_cf99e865.jpg" 
             alt="Chairperson of IEEE PELS VIT VELLORE" 
             className="contact_image" 
           />
           <div className="contact_info">
-            <div className="contact_name">ADVIK VIJAY </div>
-            <div className="contact_position">Chairperson, IEEE PELS VIT VELLORE </div>
-            
+            <div className="contact_name">Advik Vijay</div>
+            <div className="contact_position">Chairperson, IEEE PELS VIT VELLORE</div>
+            <a href="mailto:advikvijay271@gmail.com" className="contact_email">advikvijay271@gmail.com</a>
           </div>
         </div>
       </a>
@@ -77,13 +77,14 @@ function Contact() {
       >
         <div className="contact_card">
           <img 
-            src="facultycoordinator\WhatsApp Image 2025-01-03 at 19.03.19_89e21316.jpg" 
-            alt="Secretary of IEEE PELS VIT VELLORE " 
+            src="facultycoordinator/WhatsApp Image 2025-01-03 at 19.03.19_89e21316.jpg" 
+            alt="Secretary of IEEE PELS VIT VELLORE" 
             className="contact_image" 
           />
           <div className="contact_info">
-            <div className="contact_name">Prachi Kumari </div>
-            <div className="contact_position">Secretary, IEEE PELS VIT VELLORE </div>
+            <div className="contact_name">Prachi Kumari</div>
+            <div className="contact_position">Secretary, IEEE PELS VIT VELLORE</div>
+            <a href="mailto:prachi5839.k@gmail.com" className="contact_email">prachi5839.k@gmail.com</a>
           </div>
         </div>
       </a>
