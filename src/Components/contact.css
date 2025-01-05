@@ -4,8 +4,7 @@
     padding: 40px 10%;
     font-family: 'Poppins', sans-serif;
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
-    gap: 20px; /* Space between grid items */
+    gap: 20px; /* Space between grid items (both horizontally and vertically) */
 }
 
 .contacttitle {
@@ -14,9 +13,10 @@
     color: rgb(0, 70, 105);
     text-align: center;
     margin-bottom: 30px;
-    grid-column: span 2; /* Title spans the full width */
+    grid-column: span 1; /* Title spans the full width */
 }
 
+/* Contact card styles */
 .contact_card {
     display: flex;
     align-items: center;
@@ -25,6 +25,7 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%; /* Make each card take full width by default */
 }
 
 .contact_card:hover {
@@ -77,9 +78,22 @@
     cursor: pointer;
 }
 
-/* Media query for larger screens (laptops) */
+/* Media query for larger screens (laptops and desktops) */
 @media (min-width: 768px) {
     .contact {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-template-columns: repeat(1, 1fr); /* 1 columns for larger screens */
+    }
+}
+
+/* Media query for mobile screens (phones) */
+@media (max-width: 767px) {
+    .contact {
+        display: grid; /* Ensure it's a grid for mobile */
+        grid-template-columns: repeat(1, 1fr); /* Single column */
+        gap: 20px; /* Add spacing between cards for mobile view */
+    }
+
+    .contact_card {
+        width: 100%; /* Make each card take full width */
     }
 }
