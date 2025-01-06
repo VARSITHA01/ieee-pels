@@ -24,11 +24,11 @@
     height: fit-content;
     flex: 0.4;
     justify-content: center;
-    margin-top: 40px;
-    border-left: solid 1px rgb(0, 70, 105);
+    margin-top: 5px;
+
     padding-left: 5%; /* Change padding here */
     padding-right: 5%; /* Change padding here */
-    padding-top: 30px; /* Change padding here */
+    
 }
 
 .homewelcome {
@@ -70,12 +70,7 @@
     .Home {
         flex-direction: column-reverse;
     }
-    .homesec2 {
-        padding-left: 5%; /* Reduced padding for smaller screens */
-        padding-right: 5%; /* Reduced padding for smaller screens */
-        padding-top: 20px; /* Reduced padding for smaller screens */
-        flex: 0.6;
-    }
+    
     .homechapterlogosec2 {
         height: 150px; /* Reduce height for smaller screens */
         width: 150px; /* Reduce width to match the height */
@@ -90,8 +85,7 @@
     background-size: cover; /* Ensures the image covers the entire circle */
     background-repeat: no-repeat;
     background-position: center; /* Center the image within the circle */
-    border-radius: 50%; /* Makes the shape circular */
-    margin: 0 auto; /* Center the logo horizontally */
+
 }
 
 .homePromoVideo {
@@ -104,8 +98,9 @@
     width: 100%; /* Ensure the video is responsive */
     max-width: 800px; /* Set a maximum width for larger screens */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for better aesthetics */
+    border-radius: 5px; /* Rounded corners for better aesthetics */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+
 }
 
 .homePromoVideoTitle {
