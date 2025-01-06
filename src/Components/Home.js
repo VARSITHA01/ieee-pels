@@ -45,7 +45,7 @@ function Home() {
         </div>
       </div>
       <div className="homesec2">
-        <p className="video-title"> Welcome to IEEE PELS VIT VELLORE </p>
+
         <div className="video-card">
           <video 
             className="promo-video" 
