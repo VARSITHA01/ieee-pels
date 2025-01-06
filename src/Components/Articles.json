@@ -19,12 +19,19 @@
     "summary": "Introduction to Joystick-Controlled Industrial Automation Systems by  IEEE PELS VIT Vellore",
     "link": "https://www.linkedin.com/posts/ieee-pels-vitv_ieeepelsvitv-vitv-ieeeemadrassection-activity-7281010316631502848-_RZi?utm_source=share&utm_medium=member_desktop",
     "image": "ARTICLE/download.jpeg"
-  },
-  {
+  },{
+ 
     "id": 4,
     "title": "The Role of Joystick-Controlled Robotic Systems in Industrial Automation",
     "summary": "Understanding  Role of Joystick-Controlled Robotic Systems in Industrial Automation",
     "link": "https://www.linkedin.com/posts/ieee-pels-vitv_industrialautomation-robotics-joystickcontrol-activity-7281546675091857409-mv07?utm_source=share&utm_medium=member_desktop",
     "image": "ARTICLE/Picture1b.png"
+  }, {
+ 
+    "id": 5,
+    "title": "Joystick-Controlled Omnidirectional Autonomous Guided Vehicle (AGV): Redefining Industrial Mobility",
+    "summary": "Understanding  Role of Joystick-Controlled Omnidirectional Autonomous Guided Vehicle (AGV) in Industrial Automation",
+    "link": "https://www.linkedin.com/posts/ieee-pels-vitv_industrialautomation-agvs-joystickcontrol-activity-7281904886802210816-7mNo?utm_source=share&utm_medium=member_desktop",
+    "image": "ARTICLE/Automated-Guided-Vehicle-AGV-Mobile-Robot-Single-Lifting-Agv.jpg"
   }
 ]
