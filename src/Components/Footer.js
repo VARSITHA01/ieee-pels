@@ -22,7 +22,7 @@ function Footer() {
         <a href="mailto:ieeepels@vit.ac.in" rel='noreferrer'><p><MailIcon /></p></a>
       </div>
       <div className="footersec2">
-        <p>&#169; Copyright 2023 IEEE - All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions. A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
+        <p>&#169; Copyright 2025 IEEE - All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions. A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.</p>
       </div>
       <div className="footersec3">
         {/* Add any additional footer content here */}
