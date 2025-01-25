@@ -50,7 +50,7 @@ function Contact() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/chairperson-p" 
+        href="https://www.linkedin.com/in/advik-vijay-929090267" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="contact_card_link"
@@ -70,7 +70,7 @@ function Contact() {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/secretary-profile/" 
+        href="https://www.linkedin.com/profile/view?id=ADoAAEAb-OUB2q_hl8YV1pzTbCKFiIPuIoSgVMw&trk=nav_responsive_tab_profile_pic" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="contact_card_link"
