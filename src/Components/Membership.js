@@ -22,7 +22,7 @@ function Membership() {
 
   return (
     <div className="membership">
-      <h1 className="membership-title" ref={titleRef}>Membership Plans</h1>
+      <h1 className="membership-title" ref={titleRef}>Membership </h1>
       
       <div className="membership-info">
         <h2>IEEE Membership Benefits</h2>
