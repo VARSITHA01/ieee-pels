@@ -2,7 +2,7 @@
     {
       "id": 1,
       "event_link": "https://www.ieee.org/pelsvit",
-      "event_title": "Introduction to Machine Learning",
+      "event_title": " GRAVITAS-23 :Introduction to Machine Learning",
       "year": 2023,
       "date": "September 22, 2023",
       "speaker": "Mr. Souvick Chattejee from MathWorks",
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "event_link": "https://www.ieee.org/pelsvit",
-      "event_title": "Power Electronics and EV - An Equation",
+      "event_title": " GRAVITAS 23: Power Electronics and EV - An Equation",
       "year": 2023,
       "date": "October 23, 2023",
       "speaker": "Dr. Albert Alexander",
@@ -113,7 +113,7 @@
     {
       "id": 10,
       "event_link": "https://www.ieee.org/pelsvit",
-      "event_title": "Hackovation",
+      "event_title": " GRAVITAS-24: Hackovation",
       "year": 2024,
       "date": "September 27, 2024",
       "speaker": "N/A",
@@ -128,7 +128,7 @@
     {
       "id": 11,
       "event_link": "https://www.ieee.org/pelsvit",
-      "event_title": "AI Nexus",
+      "event_title": " GRAVITAS-24: AI Nexus",
       "year": 2024,
       "date": "September 20, 2024",
       "speaker": "Dr. Albert Alexander Stoiner",
@@ -142,7 +142,7 @@
     {
       "id": 12,
       "event_link": "https://www.ieee.org/pelsvit",
-      "event_title": "CircuitWave",
+      "event_title": "GRAVITAS-24 :CircuitWave",
       "year": 2024,
       "date": "September 20, 2024",
       "speaker": "Dr. Rani C.",
@@ -156,7 +156,7 @@
     {
       "id": 13,
       "event_link": "https://www.ieee.org/pelsvit",
-      "event_title": "Machine Learning Using MATLAB 2.0",
+      "event_title": " GRAVITAS-24: Machine Learning Using MATLAB 2.0",
       "year": 2024,
       "date": "September 27, 2024",
       "speaker": "Mr. Souvick Chattejee from MathWorks",
@@ -210,6 +210,45 @@
         "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.34_0829b57d.jpg",
         "ROCKETRONICS/WhatsApp Image 2024-12-15 at 16.48.36_a958bdad.jpg"
       ]
-    }
+    },
+    {
+      "id": 17,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "YANTRA-25 : Sustainable Prototyping with Tinkercad",
+      "year": 2025,
+      "date": "February 4, 2025",
+      "speaker": " Mr. Harsh Raj, Mr.Anyush Priyadarshini ",
+      "images": [
+        "/25_EVENTS/Yantra_events/tinkercad2.jpg",
+        "/25_EVENTS/Yantra_events/tinkercadevent1.jpg"
+        
+      ]
+    },
+    {
+      "id": 18,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "YANTRA-25 : AI DRIVEN FUTURE OF ELECTRIC VEHICLES ",
+      "year": 2025,
+      "date": "February 5, 2025",
+      "speaker": "Dr. Chitra A , Mr.Prithvi Raj Pandhare", 
+      "images": [
+        "/25_EVENTS/Yantra_events/evevent1.jpg",
+        "/25_EVENTS/Yantra_events/evevent2.jpg"
+      ]
+    },
+    {
+      "id": 19,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "YANTRA-25 : Relay-Thon ",
+      "year": 2025,
+      "date": "February 6, 2025",
+      "speaker": " Coding Competetion   ",
+      "images": [
+        "/25_EVENTS/Yantra_events/relathon1.jpg",
+        "/25_EVENTS/Yantra_events/relaython2.jpg"
+        
+      ]}
+      
+
   ]
   
