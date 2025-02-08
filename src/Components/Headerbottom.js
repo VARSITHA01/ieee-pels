@@ -35,9 +35,12 @@ function Headerbottom() {
                 <Link to={"/"}><li className="home">HOME</li></Link>
                 <Link to={"/about"}><li>ABOUT</li></Link>
                 <Link to={"/committee"}><li>COMMITTEE</li></Link>
+                
                 <Link to={"/events"}><li>EVENTS</li></Link>
+                <Link to={"/Membership"}><li>MEMBERSHIP</li></Link>
                 <Link to={"/contact"}><li>CONTACT</li></Link>
-                <Link to={"/articles"}><li>ARTICLES</li></Link> 
+                <Link to={"/articles"}><li>ARTICLES</li></Link>
+                
               </ul>
             </div>
           </div>
