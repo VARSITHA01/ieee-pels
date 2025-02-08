@@ -68,7 +68,7 @@ function Membership() {
       {showRenewInstructions && (
         <div className="membership-details">
           <h2>Renew Your Membership</h2>
-          <img src="/renewal-process.jpg" alt="Renewal Process" className="renewal-img" />
+          <img src="/Membership\WhatsApp Image 2025-02-08 at 09.21.17_b90d33a1.jpg" alt="Renewal Process" className="renewal-img" />
           <p>Follow these steps to renew your IEEE membership:</p>
           <ol>
             <li>Log in to your IEEE account.</li>
