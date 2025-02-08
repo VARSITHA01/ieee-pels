@@ -52,14 +52,34 @@ function Membership() {
       
       {showNewMembership && (
         <div className="membership-details">
-          <h2>New Membership Registration</h2>
+          <h2>New Student Membership Registration</h2>
           <p>Follow the steps to get a new IEEE membership:</p>
           <ol>
-            <li>Visit the official IEEE membership page.</li>
+            <li>Visit the official IEEE membership page and go to Join IEEE page.
+            </li>
+            <img src="/Membership\joining1.jpg" alt="joining Process" className="joining-img" />
             <li>Select the appropriate membership type.</li>
-            <li>Fill out the registration form with your details.</li>
-            <li>Make the required payment.</li>
+            <img src="/Membership\joining2.jpg" alt="joining Process" className="joining-img" />
+            <li>Click on Create account button .</li>
+            <img src="/Membership\joining3a.jpg" alt="joining Process" className="joining-img" />
+            <li>Fill in the registration form as shown below.</li>
+            <img src="/Membership\joining4.jpg" alt="joining Process" className="joining-img" />
+            <li>Fill in the registration form as shown below.</li>
+            <img src="/Membership\joining4a.jpg" alt="joining Process" className="joining-img" />
+            <li>Fill in the registration form as shown below.</li>
+            <img src="/Membership\joining5.jpg" alt="joining Process" className="joining-img" />
+            <li>Check the profile summary once.</li>
+            <img src="/Membership\joining6.jpg" alt="joining Process" className="joining-img" />
+            <li>Check for applied student discounts in My Cart section  .</li>
+            <img src="/Membership\joining7.jpg" alt="joining Process" className="joining-img" />
+            <li>Click on your profile name to access your IEEE account.</li>
+            <img src="/Membership\joining8.jpg" alt="joining Process" className="joining-img" />
+            <li>Go to your profile </li>
+            <img src="/Membership\joining9.jpg" alt="joining Process" className="joining-img" />
+            <li>Go to  Personal Profile .</li>
+            <img src="/Membership\joining10.jpg" alt="joining Process" className="joining-img" />
             <li>Receive confirmation and enjoy IEEE benefits.</li>
+            <img src="/Membership\joining11.jpg" alt="joining Process" className="joining-img" />
           </ol>
           <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener noreferrer" className="membership-link">Join Now</a>
         </div>
@@ -71,7 +91,9 @@ function Membership() {
           <img src="/Membership\WhatsApp Image 2025-02-08 at 09.21.17_b90d33a1.jpg" alt="Renewal Process" className="renewal-img" />
           <p>Follow these steps to renew your IEEE membership:</p>
           <ol>
-            <li>Log in to your IEEE account.</li>
+            <li>Log in to your IEEE account.
+              
+            </li>
             <li>Navigate to the membership renewal section.</li>
             <li>Review your membership details.</li>
             <li>Proceed with the renewal payment.</li>

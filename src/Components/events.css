@@ -45,11 +45,11 @@
 
 /* Events Cards Layout */
 .events-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 cards per row */
 }
 
 /* Individual Event Card */
@@ -59,10 +59,10 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 300px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-family: 'Poppins', sans-serif;
+  max-width: 100%;
 }
 
 .event-card:hover {
@@ -73,9 +73,9 @@
 /* Highlight YANTRA & GRAVITAS Events */
 /* Light Golden Background for YANTRA & GRAVITAS */
 .gold-bg {
-  background-color: white !important;  /* Light golden shade */
+  background-color: white !important;  
   color: black !important;
-  border: 2px solid #e6c200;  /* Slightly darker golden border */
+  border: 2px solid #e6c200;
 }
 
 /* Event Titles */
@@ -103,7 +103,7 @@
 
 .event-image {
   width: 100%;
-  aspect-ratio: 1 / 1; /* Square images */
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -138,17 +138,14 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .menu-container {
-    max-width: 100%;
-    padding: 10px;
+@media (max-width: 1024px) {
+  .events-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
   }
+}
 
-  .event-card {
-    max-width: 90%;
-  }
-
-  .event-images {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
+@media (max-width: 600px) {
+  .events-cards {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
   }
 }
