@@ -2,15 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 import 'animate.css';
 import Typewriter from 'typewriter-effect';
-import eventsData from './upcomingevents.json';
 
 function Home() {
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    setEvents(eventsData);
-  }, []);
-
   return (
     <div className='Home animate__animated animate__fadeIn'>
       <div className="homesec1">
@@ -58,10 +51,10 @@ function Home() {
         </div>
       </div>
 
-      {/* Section 2: Video + Upcoming Events */}
+      {/* Section 2: Promo Video only */}
       <div className="homesec2">
         <div className="homechapterlogosec2" />
-        
+
         {/* Promo Video */}
         <div className="homePromoVideo">
           <video 
@@ -72,41 +65,6 @@ function Home() {
             muted
           />
         </div>
-
-        {/* Upcoming Events Section */}
-        <div className="homeUpcomingEvents">
-          <p className="homeUpcomingEventsTitle">Upcoming Events</p>
-          <div className="homeUpcomingEventsList">
-            {events.length > 0 ? (
-              events.map((event) => (
-                <div key={event.id} className="homeUpcomingEventItem">
-                  {event.poster && (
-                    <img 
-                      src={event.poster} 
-                      alt={`${event.title} Poster`} 
-                      className="eventPoster"
-                    />
-                  )}
-                  <h3>{event.title}</h3>
-                  <p className="eventDate">{event.date}</p>
-                  <p className="eventDescription">{event.description}</p>
-                  
-                  {/* Display registration link if available */}
-                  {event.registrationLink && (
-                    <p className="eventRegistrationLink">
-                      <a href={event.registrationLink} target="_blank" rel="noopener noreferrer">
-                        Register Now
-                      </a>
-                    </p>
-                  )}
-                </div>
-              ))
-            ) : (
-              <p>No upcoming events available.</p>
-            )}
-          </div>
-        </div>
-
       </div>
     </div>
   );
