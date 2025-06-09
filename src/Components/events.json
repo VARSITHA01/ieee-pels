@@ -247,7 +247,33 @@
         "/25_EVENTS/Yantra_events/relathon1.jpg",
         "/25_EVENTS/Yantra_events/relaython2.jpg"
         
+      ]},
+      {
+      "id": 20,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Quality Week  :  ",
+      "year": 2025,
+      "date": "February 6, 2025",
+      "speaker": " Coding Competetion   ",
+      "images": [
+        "/25_EVENTS/Yantra_events/relathon1.jpg",
+        "/25_EVENTS/Yantra_events/relaython2.jpg"
+        
       ]}
+,
+{
+      "id": 21,
+      "event_link": "https://www.ieee.org/pelsvit",
+      "event_title": "Career Boost: Professional Presence Workshop by IEEE PELS VIT",
+      "year": 2025,
+      "date": "February 6, 2025",
+      "speaker": " Coding Competetion   ",
+      "images": [
+        "/25_EVENTS/Yantra_events/relathon1.jpg",
+        "/25_EVENTS/Yantra_events/relaython2.jpg"
+        
+      ]}
+
       
 
   ]

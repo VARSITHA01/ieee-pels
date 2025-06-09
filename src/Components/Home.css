@@ -7,6 +7,7 @@
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     margin-bottom: 40px;
     font-family: 'Poppins', sans-serif;
@@ -25,10 +26,8 @@
     flex: 0.4;
     justify-content: center;
     margin-top: 5px;
-
-    padding-left: 5%; /* Change padding here */
-    padding-right: 5%; /* Change padding here */
-    
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .homewelcome {
@@ -48,19 +47,7 @@
     font-weight: 500;
 }
 
-.homeintrotitle {
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(0, 70, 105);
-}
-
-.homebranchvisiontitle {
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(0, 70, 105);
-}
-
-.homebranchmissiontitle {
+.homeintrotitle, .homebranchvisiontitle, .homebranchmissiontitle {
     font-size: 20px;
     font-weight: 600;
     color: rgb(0, 70, 105);
@@ -72,40 +59,79 @@
     }
     
     .homechapterlogosec2 {
-        height: 150px; /* Reduce height for smaller screens */
-        width: 150px; /* Reduce width to match the height */
-        margin: 0 auto; /* Center the logo horizontally */
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
     }
+}
+
+.homeUpcomingEventsTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .homechapterlogosec2 {
     background-image: url("./chapter_logo.png");
-    height: 300px; /* Adjust the height as needed */
-    width: 300px; /* Set the width equal to the height to make it a perfect circle */
-    background-size: cover; /* Ensures the image covers the entire circle */
+    height: 300px;
+    width: 300px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* Center the image within the circle */
-
+    background-position: center;
 }
 
 .homePromoVideo {
-    width: 100%; /* Full width to fit the container */
-    margin: 20px 0; /* Add some spacing above and below */
-    text-align: center; /* Center the video in its container */
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .homePromoVideo video {
-    width: 100%; /* Ensure the video is responsive */
-    max-width: 800px; /* Set a maximum width for larger screens */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners for better aesthetics */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .homePromoVideoTitle {
-    font-size: 24px; /* Title font size */
-    font-weight: 700; /* Bold title */
-    color: rgb(0, 70, 105); /* Match the site's theme color */
-    margin-bottom: 15px; /* Space between the title and video */
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    margin-bottom: 15px;
 }
+
+/* Upcoming Events Section */
+.homeUpcomingEventsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.homeUpcomingEventItem {
+    width: 280px;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+/* Event poster style */
+.eventPoster {
+    width: 100%;
+    height: 250px;  /* Adjust based on your layout */
+    object-fit: auto ;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.homeUpcomingEventItem {
+    position: relative;
+    overflow: visible;  /* Allow image to overflow out of the card */
+}
+

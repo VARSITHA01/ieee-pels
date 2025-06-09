@@ -35,8 +35,8 @@ function Membership() {
       </div>
 
       <div className="certificate-container">
-        <h2>Certificate of Membership</h2>
-        <img src="/Membership\membershipcerticifate.jpg" alt="IEEE Membership Certificate" className="certificate-img" />
+        <h2>Certificate of IEEE - PELS Membership</h2>
+        <img src="/Membership\membershipcerticifate.jpg" alt="IEEE- Membership Certificate" className="certificate-img" />
       </div>
 
       <div className="membership-actions">
@@ -70,15 +70,20 @@ function Membership() {
             <img src="/Membership\joining5.jpg" alt="joining Process" className="joining-img" />
             <li>Check the profile summary once.</li>
             <img src="/Membership\joining6.jpg" alt="joining Process" className="joining-img" />
-            <li>Check for applied student discounts in My Cart section  .</li>
+            <li>In catalogue section Click on the Society membership for adding IEEE POWER ELECTRONICS SOCIETY Student Membership  .</li>
             <img src="/Membership\joining7.jpg" alt="joining Process" className="joining-img" />
+            <img src="/Membership\joining6a.png" alt="joining Process" className="joining-img" />
+            <li>Select IEEE PELS ESSENTIAL Membership plain to avail the offer   .</li>
+            <img src="/Membership\pelsessential.jpg" alt="joining Process" className="joining-img" />
+            <li>Check for applied student discounts in My Cart section   .</li>
+            <img src="/Membership\membershippaymentscreen.jpg" alt="joining Process" className="joining-img" />
             <li>Click on your profile name to access your IEEE account.</li>
             <img src="/Membership\joining8.jpg" alt="joining Process" className="joining-img" />
             <li>Go to your profile </li>
             <img src="/Membership\joining9.jpg" alt="joining Process" className="joining-img" />
             <li>Go to  Personal Profile .</li>
             <img src="/Membership\joining10.jpg" alt="joining Process" className="joining-img" />
-            <li>Receive confirmation and enjoy IEEE benefits.</li>
+            <li>Receive confirmation and enjoy IEEE benefits with IEEE-PELS membership.</li>
             <img src="/Membership\joining11.jpg" alt="joining Process" className="joining-img" />
           </ol>
           <a href="https://www.ieee.org/membership/join/index.html" target="_blank" rel="noopener noreferrer" className="membership-link">Join Now</a>
