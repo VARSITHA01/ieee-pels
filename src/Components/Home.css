@@ -1,137 +1,154 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .Home {
-    background-color: white;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin-bottom: 40px;
-    font-family: 'Poppins', sans-serif;
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Left Section */
 .homesec1 {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 40px;
-    flex: 0.6;
+  padding: 40px 10%;
+  flex: 0.6;
 }
 
+/* Right Section (Video + Events) */
 .homesec2 {
-    background-color: white;
-    height: fit-content;
-    flex: 0.4;
-    justify-content: center;
-    margin-top: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
+  background-color: white;
+  flex: 0.4;
+  justify-content: center;
+  padding: 20px 5%;
 }
 
+/* Headings and Titles */
 .homewelcome {
-    font-size: 30px;
-    font-weight: 600;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .homechaptername {
-    font-size: 42px;
-    font-weight: 700;
-    color: rgb(0, 70, 105);
-    line-height: 55px;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgb(0, 70, 105);
+  line-height: 55px;
 }
 
 .homeclgname {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.homeintrotitle, .homebranchvisiontitle, .homebranchmissiontitle {
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(0, 70, 105);
+.homeintrotitle,
+.homebranchvisiontitle,
+.homebranchmissiontitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 70, 105);
 }
 
-@media screen and (max-width: 800px) {
-    .Home {
-        flex-direction: column-reverse;
-    }
-    
-    .homechapterlogosec2 {
-        height: 150px;
-        width: 150px;
-        margin: 0 auto;
-    }
-}
-
-.homeUpcomingEventsTitle {
-    font-size: 24px;
-    font-weight: 700;
-    color: rgb(0, 70, 105);
-    margin-bottom: 20px;
-    text-align: center;
-}
-
+/* Chapter Logo */
 .homechapterlogosec2 {
-    background-image: url("./chapter_logo.png");
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("./chapter_logo.png");
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 20px auto;
 }
 
+/* Promo Video */
 .homePromoVideo {
-    width: 100%;
-    margin: 20px 0;
-    text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .homePromoVideo video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.homePromoVideoTitle {
-    font-size: 24px;
-    font-weight: 700;
-    color: rgb(0, 70, 105);
-    margin-bottom: 15px;
+/* Upcoming Events Title */
+.upcomingEventsTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(0, 70, 105);
+  margin: 30px 0 15px;
 }
 
-/* Upcoming Events Section */
-.homeUpcomingEventsList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+/* Upcoming Event Card */
+.upcomingEventCard {
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+  animation-duration: 0.7s;
 }
 
-.homeUpcomingEventItem {
-    width: 280px;
-    background-color: #f9f9f9;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    position: relative;
-    transition: transform 0.3s;
-}
-
-/* Event poster style */
+/* Event Poster */
 .eventPoster {
-    width: 100%;
-    height: 250px;  /* Adjust based on your layout */
-    object-fit: auto ;
-    transition: transform 0.3s ease; /* Smooth transition */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
 
-.homeUpcomingEventItem {
-    position: relative;
-    overflow: visible;  /* Allow image to overflow out of the card */
+/* Register Button */
+.registerBtn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #004466;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
+.registerBtn:hover {
+  background-color: #006699;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .Home {
+    flex-direction: column-reverse;
+  }
+
+  .homechapterlogosec2 {
+    height: 150px;
+    width: 150px;
+  }
+
+  .homesec1,
+  .homesec2 {
+    padding: 20px;
+  }
+
+  .homechaptername {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .upcomingEventCard {
+    padding: 15px;
+  }
+}
