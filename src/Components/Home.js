@@ -10,23 +10,22 @@ function Home() {
   const events = [
     {
       title: "PELS DAY 2025: Designing the Future – Smart Power Electronics for a Net Zero World",
-      poster: "coming soon...",
+      poster: "25_EVENTS/posters/PELSDAY.png",
       description:
         "An online session with Prof. Pallavi Bharadwaj from IIT Gandhinagar on how smart power electronics enable a sustainable, low-carbon future through advanced PV systems, EV chargers, hydrogen storage, and multi-energy optimization. Includes a carbon footprint quiz and Q&A.",
       date: "20th June 2025",
-      speaker: "Prof. Bhardwaj , IIT Gandhinagar",
-      time: "To be announced",
+      speaker: "Prof. Bhardwaj , Assistant Professor, IIT Gandhinagar",
+      time: "3:30-5:00 PM",
       link: "https://forms.gle/4TD13qeGda3yDfkG8"
     },
     {
       title: "Global Wind Day 2025",
-      poster: "coming soon...",
+      poster: "25_EVENTS/posters/GWW.png",
       description:
         "A campaign and interactive session exploring the role of wind energy in sustainable power systems. Includes quizzes, student presentations, and turbine insights.",
       date: "15th June 2025",
-      speaker: "To be announced",
-      time: "To be announced",
-      
+      speaker: "Mr Jeevan P ,Prince kumar,VIT Vellore",
+      time: "4-5:3-0 PM"
     }
   ];
 
@@ -36,7 +35,7 @@ function Home() {
       setTimeout(() => {
         setCurrentEvent((prev) => (prev + 1) % events.length);
         setAnimationClass('animate__slideInRight');
-      }, 400); // short delay for slideOut to finish
+      }, 400);
     }, 6000);
     return () => clearInterval(interval);
   }, [events.length]);
@@ -46,7 +45,6 @@ function Home() {
   return (
     <div className='Home animate__animated animate__fadeIn'>
       <div className="homesec1">
-        {/* Text Section */}
         <div className="homechapname">
           <p className="homewelcome">Welcome to,</p>
           <p className="homechaptername">IEEE POWER ELECTRONICS SOCIETY</p>
@@ -114,14 +112,16 @@ function Home() {
           <p><strong>Date:</strong> {event.date}</p>
           <p><strong>Speaker:</strong> {event.speaker}</p>
           <p><strong>Time:</strong> {event.time}</p>
-          <a
-            href={event.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="registerBtn"
-          >
-            Register Now
-          </a>
+          {event.link && (
+            <a
+              href={event.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="registerBtn"
+            >
+              Register Now
+            </a>
+          )}
         </div>
       </div>
     </div>
