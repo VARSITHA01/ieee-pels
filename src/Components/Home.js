@@ -8,28 +8,31 @@ function Home() {
   const [animationClass, setAnimationClass] = useState('animate__slideInRight');
 
   const events = [
+    // Example event (add or remove as needed)
+    // {
+    //   title: "Sample Event",
+    //   poster: "event-poster.png",
+    //   description: "This is a sample event.",
+    //   date: "25th June 2025",
+    //   speaker: "Dr. Sample",
+    //   time: "4:00 PM",
+    //   link: "https://example.com"
+    // }
+  ];
+
+  const notifications = [
     {
-      title: "PELS DAY 2025: Designing the Future – Smart Power Electronics for a Net Zero World",
-      poster: "25_EVENTS/posters/PELSDAY.png",
-      description:
-        "An online session with Prof. Pallavi Bharadwaj from IIT Gandhinagar on how smart power electronics enable a sustainable, low-carbon future through advanced PV systems, EV chargers, hydrogen storage, and multi-energy optimization. Includes a carbon footprint quiz and Q&A.",
-      date: "20th June 2025",
-      speaker: "Prof. Bhardwaj , Assistant Professor, IIT Gandhinagar",
-      time: "3:30-5:00 PM",
-      link: "https://forms.gle/4TD13qeGda3yDfkG8"
-    },
-    {
-      title: "Global Wind Day 2025",
-      poster: "25_EVENTS/posters/GWW.png",
-      description:
-        "A campaign and interactive session exploring the role of wind energy in sustainable power systems. Includes quizzes, student presentations, and turbine insights.",
-      date: "15th June 2025",
-      speaker: "Mr Jeevan P ,Prince kumar,VIT Vellore",
-      time: "4-5:3-0 PM"
+      poster: "25_EVENTS/notification posters/notification1.jpg",
+      title: "IEEEXtreme 19.0 Student Ambassador Announcement",
+      message:
+        "We’re proud to share that Nitin Mutayala has been selected as the IEEEXtreme 19.0 Student Ambassador from our Student Chapter, representing all four VIT campuses in India— VIT Vellore, VIT Chennai, VIT Bhopal, and VIT-AP (Amaravati).",
+      date: "21st June 2025",
     }
   ];
 
   useEffect(() => {
+    if (events.length === 0) return;
+
     const interval = setInterval(() => {
       setAnimationClass('animate__slideOutLeft');
       setTimeout(() => {
@@ -37,6 +40,7 @@ function Home() {
         setAnimationClass('animate__slideInRight');
       }, 400);
     }, 6000);
+
     return () => clearInterval(interval);
   }, [events.length]);
 
@@ -101,28 +105,47 @@ function Home() {
           />
         </div>
 
-        <div className="upcomingEventsTitle">
-          <h2>📅 Upcoming Events</h2>
-        </div>
+        {(events.length > 0 || notifications.length > 0) && (
+          <div className="eventNotificationSection">
+            <div className="upcomingEventsTitle">
+              <h2>📢 Upcoming Events & Notifications</h2>
+            </div>
 
-        <div className={`upcomingEventCard animate__animated ${animationClass}`}>
-          <img src={event.poster} alt={event.title} className="eventPoster" />
-          <h3>{event.title}</h3>
-          <p><strong>Description:</strong> {event.description}</p>
-          <p><strong>Date:</strong> {event.date}</p>
-          <p><strong>Speaker:</strong> {event.speaker}</p>
-          <p><strong>Time:</strong> {event.time}</p>
-          {event.link && (
-            <a
-              href={event.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="registerBtn"
-            >
-              Register Now
-            </a>
-          )}
-        </div>
+            {events.length > 0 && (
+              <div className={`upcomingEventCard animate__animated ${animationClass}`}>
+                <img src={event.poster} alt={event.title} className="eventPoster" />
+                <h3>{event.title}</h3>
+                <p><strong>Description:</strong> {event.description}</p>
+                <p><strong>Date:</strong> {event.date}</p>
+                <p><strong>Speaker:</strong> {event.speaker}</p>
+                <p><strong>Time:</strong> {event.time}</p>
+                {event.link && (
+                  <a
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="registerBtn"
+                  >
+                    Register Now
+                  </a>
+                )}
+              </div>
+            )}
+
+            {notifications.length > 0 && (
+              <div className="notificationCard">
+                {notifications.map((note, index) => (
+                  <div key={index} className="singleNotification">
+                    <img src={note.poster} alt={note.title} className="notificationPoster" />
+                    <h4>{note.title}</h4>
+                    <p>{note.message}</p>
+                    <p><strong>Date:</strong> {note.date}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

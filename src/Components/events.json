@@ -261,8 +261,6 @@
         "25_EVENTS/qw_event/qualityweek5.jpg",
         "25_EVENTS/qw_event/quality week3.jpg",
         "25_EVENTS/qw_event/qualityweek4.jpg"
-        
-        
       ]}
 ,
 {
@@ -277,6 +275,30 @@
         "25_EVENTS/event_pics/careerboost1.png",
         "25_EVENTS/event_pics/careerboost2.png",
         "25_EVENTS/event_pics/careerboost5.png"
-      ]}
+      ]},    
+{ "id": 22,
+      "event_title": "PELS DAY 2025: Designing the Future – Smart Power Electronics for a Net Zero World",
+       "date": " June 20 ,2025",
+       "year": 2025,
+      "speaker": "Prof. Bhardwaj , Assistant Professor, IIT Gandhinagar",
+      "images": [
+        "25_EVENTS/posters/PELSDAY.png",
+        "25_EVENTS/event_pics/pelsday1.png",
+        "25_EVENTS/event_pics/pelsday2.png",
+        "25_EVENTS/event_pics/pelsday3.png"
+      ]
+    },
+{ "id": 23,
+      "event_title": "Global Wind Day 2025",
+       "date": " June 15 ,2025",
+       "year": 2025,
+      "speaker": "Mr Jeevan P ,Prince kumar,VIT Vellore",
+      "images": [
+       "25_EVENTS/posters/GWW.png",
+        "25_EVENTS/event_pics/GWD1.jpg",
+        "25_EVENTS/event_pics/GWD2.jpg",
+        "25_EVENTS/event_pics/gwd3.jpg"
+      ]
+    }
   ]
   
