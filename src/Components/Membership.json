@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "Basic Membership",
+      "image": "basic.jpg",
+      "benefits": "Access to newsletters, community forums, and monthly events.",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "title": "Premium Membership",
+      "image": "premium.jpg",
+      "benefits": "All basic benefits + exclusive workshops and mentorship.",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "title": "Elite Membership",
+      "image": "elite.jpg",
+      "benefits": "All premium benefits + 1-on-1 mentorship and special discounts.",
+      "link": "#"
+    }
+  ]
+  

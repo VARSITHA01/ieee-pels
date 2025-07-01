@@ -1,0 +1,137 @@
+/* General Styling for Articles Section */
+.articles {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 10% 10px 10%;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; /* Center align content */
+}
+
+.articletitle {
+    color: var(--primary-color, rgb(0, 70, 105));
+    font-size: 40px;
+    font-weight: 700;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.articletitle.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* General Styling for Articles Section */
+.articles {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 10% 10px 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.articletitle {
+    color: rgb(0, 70, 105);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Grid Styling for Articles */
+.articleslist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Fixed 3 columns */
+    gap: 20px;
+}
+
+/* Article Card Styling */
+.articlecard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.articlecard:hover {
+    transform: translateY(-10px);
+}
+
+/* Article Image Styling with Aspect Ratio */
+.articlecard .article-img {
+    width: 100%;  /* Takes up the full width of the container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: contain; /* Ensures the image keeps its aspect ratio and fits within the container */
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+
+
+/* Article Title and Summary Styling */
+.articlecard .article-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 70, 105);
+    margin-bottom: 5px;
+}
+
+.articlecard .article-summary {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .articles {
+        padding: 40px 5%;
+    }
+
+    .articletitle {
+        font-size: 32px;
+    }
+
+    .articleslist {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on medium screens */
+    }
+
+    .articlecard .article-img {
+        width: 90%; /* Adjust the image width on medium screens */
+    }
+
+    .articlecard .article-title {
+        font-size: 16px;
+    }
+
+    .articlecard .article-summary {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .articles {
+        padding: 30px 5%;
+    }
+
+    .articletitle {
+        font-size: 28px;
+    }
+
+    .articleslist {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on phones */
+    }
+
+    .articlecard .article-img {
+        width: 80%; /* Adjust the image width on small screens */
+    }
+
+    .articlecard .article-title {
+        font-size: 14px;
+    }
+
+    .articlecard .article-summary {
+        font-size: 10px;
+    }
+}

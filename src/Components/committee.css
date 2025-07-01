@@ -1,0 +1,187 @@
+/* Root Variables for Consistency */
+:root {
+    --primary-color: rgb(0, 70, 105);
+    --secondary-color: rgb(0, 55, 85);
+    --text-color: gray;
+    --background-color: white;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General Styling for Committee Section */
+.committee {
+    background-color: var(--background-color);
+    width: 100%;
+    height: fit-content;
+    padding: 40px 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.committeetitle {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Grid Styling for Committee Members */
+.committeemembers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 20px;
+}
+
+/* Large Screens - 4 Columns */
+@media (min-width: 1400px) {
+    .committeemembers {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Member Card Styling */
+.membersx {
+    background-color: var(--background-color);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect only for non-touch devices */
+@media (hover: hover) {
+    .membersx:hover {
+        transform: translateY(-10px);
+    }
+}
+
+.membersx .member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.membersx .member-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.membersx .member-position {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Centering the dropdown button */
+.dropdown {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px;
+}
+
+.dropdown select {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown select:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Advisory Board Section */
+.advisoryboard {
+    background-color: var(--background-color);
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.advisorytitle {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+/* Tablets (between 600px and 1024px) - 2 Columns */
+@media (max-width: 1024px) {
+    .committee {
+        padding: 40px 5%;
+    }
+
+    .committeetitle {
+        font-size: 32px;
+    }
+
+    .committeemembers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membersx {
+        padding: 40px;
+    }
+
+    .membersx .member-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .membersx .member-name {
+        font-size: 16px;
+    }
+
+    .membersx .member-position {
+        font-size: 12px;
+    }
+
+    .advisorytitle {
+        font-size: 32px;
+    }
+}
+
+/* Mobile (below 600px) - 1 or 2 Columns */
+@media (max-width: 600px) {
+    .committee {
+        padding: 30px 5%;
+    }
+
+    .committeetitle {
+        font-size: 28px;
+    }
+
+    .committeemembers {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .membersx {
+        padding: 30px;
+    }
+
+    .membersx .member-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .membersx .member-name {
+        font-size: 14px;
+    }
+
+    .membersx .member-position {
+        font-size: 10px;
+    }
+
+    .advisorytitle {
+        font-size: 28px;
+    }
+}

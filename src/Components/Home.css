@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins||Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.Home {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.homesec1 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 40px;
+    flex: 0.6;
+}
+
+.homesec2 {
+    background-color: white;
+    height: fit-content;
+    flex: 0.4;
+    justify-content: center;
+    margin-top: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.homewelcome {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.homechaptername {
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    line-height: 55px;
+}
+
+.homeclgname {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.homeintrotitle, .homebranchvisiontitle, .homebranchmissiontitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 70, 105);
+}
+
+@media screen and (max-width: 800px) {
+    .Home {
+        flex-direction: column-reverse;
+    }
+    
+    .homechapterlogosec2 {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+}
+
+.homeUpcomingEventsTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.homechapterlogosec2 {
+    background-image: url("./chapter_logo.png");
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.homePromoVideo {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.homePromoVideo video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.homePromoVideoTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    margin-bottom: 15px;
+}
+
+/* Upcoming Events Section */
+.homeUpcomingEventsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.homeUpcomingEventItem {
+    width: 280px;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+/* Event poster style */
+.eventPoster {
+    width: 100%;
+    height: 250px;  /* Adjust based on your layout */
+    object-fit: auto ;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.homeUpcomingEventItem {
+    position: relative;
+    overflow: visible;  /* Allow image to overflow out of the card */
+}
+
+.calendarButton {
+  padding: 8px 14px;
+  margin-top: 10px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.calendarButton:hover {
+  background-color: #3367d6;
+}
+

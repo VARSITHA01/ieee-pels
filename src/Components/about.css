@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;700&display=swap');
+
+.about {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 40px 10%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.abouttitle {
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 700;
+    color: rgb(0, 70, 105);
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 70, 105, 0.2);
+}
+
+/* Section Container */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between sections */
+}
+
+/* Individual Section */
+.aboutsec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px; /* Space between image and content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Image Styling */
+.aboutsec-img {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Styling */
+.aboutsec-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutsectitle {
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 600;
+    color: rgb(0, 70, 105);
+    margin-bottom: 15px;
+    text-align: left;
+    border-left: 4px solid rgb(0, 70, 105);
+    padding-left: 10px;
+}
+
+.aboutsec p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aboutsec ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #555;
+}
+
+.aboutsec ul li {
+    margin-bottom: 8px;
+    list-style-type: disc;
+}
+
+/* Hover Effect */
+.aboutsec:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Staggered Animation */
+.aboutsec:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.aboutsec:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.aboutsec:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Keyframes for Fade-in Animation */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutsec {
+        flex-direction: column; /* Stack image and content vertically */
+        text-align: center;
+    }
+
+    .aboutsec-img {
+        max-width: 100%; /* Adjust image size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .aboutsectitle {
+        font-size: clamp(16px, 3vw, 20px);
+    }
+
+    .aboutsec p {
+        font-size: 14px;
+    }
+}
